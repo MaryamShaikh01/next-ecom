@@ -1,7 +1,7 @@
-import Basket from '@/svg/Basket'
-import Heart from '@/svg/Heart'
-import MapSvg from '@/svg/Map'
-import UserIcon from '@/svg/UserIcon'
+import Basket from '@/components/svg/Basket'
+import Heart from '@/components/svg/WishListHeart'
+import MapSvg from '@/components/svg/Map'
+import UserIcon from '@/components/svg/UserIcon'
 import React from 'react'
 import Navigation from '../ShadCN/Navigation'
 
@@ -31,15 +31,20 @@ const HeaderBottom = () => {
 
             </div>
             <div className='px-[10px] m-auto w-[80vw] flex justify-between py-4'>
-                <p>All Categories</p>
+                <div className='flex justify-between items-center gap-x-5'>
                 <Navigation></Navigation>
                 <p>Shop</p>
                 <p>Fruits & Vegetables</p>
                 <p>Beverages</p>
                 <p>Blog</p>
                 <p>Contact</p>
+
+                </div>
+                <div className='flex justify-between items-center gap-x-5'>
+
                 <p>Trending Products</p>
                 <p>Almost Finished <span>SALE</span></p>
+                </div>
             </div>
 
         </div>

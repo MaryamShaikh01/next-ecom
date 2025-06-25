@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Heart = () => {
+const WishListHeart = () => {
     return (
         <>
         <span className='relative'>
@@ -14,4 +14,4 @@ const Heart = () => {
     )
 }
 
-export default Heart
+export default WishListHeart

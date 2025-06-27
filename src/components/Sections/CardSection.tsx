@@ -30,7 +30,7 @@ const ShopNowCard = () => {
   ];
   return (
     <>
-      <div className='grid grid-cols-[repeat(auto-fit,minmax(350px,1fr))] gap-x-8   px-[10px] m-auto w-[80vw] py-10'>
+      <div className='grid grid-cols-[repeat(auto-fit,minmax(350px,1fr))] gap-x-8   px-[10px] m-auto w-[80vw]'>
         {cards.map((card, index) => (
           <WeekCard key={index} {...card} />
         ))}

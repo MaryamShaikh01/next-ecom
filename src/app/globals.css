@@ -10,6 +10,8 @@
   --text-primary : #030712;
   --text-secondary : #6B7280;
   --border : #E5E7EB;
+  --badgeGreenText : #166534;
+  --badgeBlueText : #0891B2;
 }
 
 /* @theme inline {

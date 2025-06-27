@@ -37,7 +37,7 @@ const MoreProductsSection = () => {
   ];
   return (
 
-    <div className='grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-x-8 min-h-[500px]  px-[10px] m-auto w-[80vw] py-10'>
+    <div className='grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-x-8 min-h-[500px] m-auto w-[80vw] '>
         {moreProductCardsData.map((card) => (
           <div className=" bg-cover bg-no-repeat px-5 py-10 rounded-[12px] flex flex-col gap-y-1" style={{ backgroundImage: `url(${card.imageUrl})` }}>
                     <p className='text-[var(--orange)] font-medium text-xs'>{card.badge}</p>

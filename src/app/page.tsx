@@ -33,6 +33,7 @@ export default function Home() {
       <TagSection></TagSection>
       <SectionHeading title={"Popular Companies"} description={"Some of the new products arriving this weeks"} ></SectionHeading>
       <TestimonialSection></TestimonialSection>
+      
 
     </>
   )

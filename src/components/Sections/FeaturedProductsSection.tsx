@@ -5,10 +5,10 @@ import LikeHeart from '../svg/LikeHeart'
 const FeaturedProductsSection = () => {
     return (
         <>
-            <div className='my-[40px] border-1 border-[var(--border)] rounded-[12px] m-auto w-[80vw] grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-x-5 gap-y-5'>
+            <div className='mb-[40px] border-1 border-[var(--border)] rounded-[12px] m-auto w-[80vw] grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] '>
 
 
-                <div className='flex flex-col md:grid grid-cols-[auto_1fr] p-5'>
+                <div className='flex flex-col md:grid grid-cols-[auto_1fr] p-5 border-r-1 border-r-[var(--border)] border-b-1 border-b-[var(--border)]'>
                     <div className="relative w-[200px] h-[200px]">
                         <img src="/banana-bunch.png" alt="banana image" className="w-[200px] h-[200px] object-cover" />
                         <div className='absolute top-0 left-0 flex justify-between items-center w-full'>
@@ -38,7 +38,7 @@ const FeaturedProductsSection = () => {
                 </div>
 
 
-                <div className='flex flex-col md:grid grid-cols-[auto_1fr] p-5'>
+                <div className='flex flex-col md:grid grid-cols-[auto_1fr] p-5  border-r-1 border-r-[var(--border)] border-b-1 border-b-[var(--border)]'>
 
 
                     <div className="relative w-[200px] h-[200px]">
@@ -71,7 +71,7 @@ const FeaturedProductsSection = () => {
                 </div>
 
 
-                <div className='flex flex-col md:grid grid-cols-[auto_1fr] p-5'>
+                <div className='flex flex-col md:grid grid-cols-[auto_1fr] p-5  border-b-1 border-b-[var(--border)]'>
 
 
                     <div className="relative w-[200px] h-[200px]">
@@ -104,7 +104,7 @@ const FeaturedProductsSection = () => {
                 </div>
 
 
-                <div className='flex flex-col md:grid grid-cols-[auto_1fr] p-5'>
+                <div className='flex flex-col md:grid grid-cols-[auto_1fr] p-5  border-r-1 border-r-[var(--border)] border-b-1 border-b-[var(--border)]'>
 
 
                     <div className="relative w-[200px] h-[200px]">
@@ -137,7 +137,7 @@ const FeaturedProductsSection = () => {
                 </div>
 
 
-                <div className='flex flex-col md:grid grid-cols-[auto_1fr] p-5'>
+                <div className='flex flex-col md:grid grid-cols-[auto_1fr] p-5  border-r-1 border-r-[var(--border)] border-b-1 border-b-[var(--border)]'>
 
 
                     <div className="relative w-[200px] h-[200px]">

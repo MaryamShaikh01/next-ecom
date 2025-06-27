@@ -1,0 +1,182 @@
+[
+  {
+    "id": "1",
+    "productTitle": "100 Percent Apple Juice – 64 fl oz Bottle",
+    "originalPrice": "$59.99",
+    "ourPrice": "$39.99",
+    "discountPercentage": "33%",
+    "badgeText": "Best Seller",
+    "image": "/apple-juice.png"
+  },
+  {
+    "id": "2",
+    "productTitle": "Great Value Rising Crust Frozen Pizza, Supreme",
+    "originalPrice": "$199.99",
+    "ourPrice": "$149.99",
+    "discountPercentage": "25%",
+    "badgeText": "Hot Deal",
+    "image": "/pizza.png"
+  },
+  {
+    "id": "3",
+    "productTitle": "Simply Orange Pulp Free Juice – 52 fl oz",
+    "originalPrice": "$89.99",
+    "ourPrice": "$69.99",
+    "discountPercentage": "22%",
+    "badgeText": "Limited Offer",
+    "image": "/orange-juice.png"
+  },
+  {
+    "id": "4",
+    "productTitle": "California Pizza Kitchen Margherita, Crispy Thin Crus…",
+    "originalPrice": "$129.99",
+    "ourPrice": "$99.99",
+    "discountPercentage": "23%",
+    "badgeText": "Trending",
+    "image": "/pizza.png"
+  },
+  {
+    "id": "5",
+    "productTitle": "Cantaloupe Melon Fresh Organic Cut",
+    "originalPrice": "$49.99",
+    "ourPrice": "$34.99",
+    "discountPercentage": "30%",
+    "badgeText": "Editor's Pick",
+    "image": "/cantaloupe.png"
+  },
+  {
+    "id": "6",
+    "productTitle": "Angel Soft Toilet Paper, 9 Mega Rolls",
+    "originalPrice": "$39.99",
+    "ourPrice": "$29.99",
+    "discountPercentage": "25%",
+    "badgeText": "Must Have",
+    "image": "/toilet-paper.png"
+  },
+  {
+    "id": "7",
+    "productTitle": "4K Action Camera",
+    "originalPrice": "$149.99",
+    "ourPrice": "$109.99",
+    "discountPercentage": "27%",
+    "badgeText": "Top Rated",
+    "image": "/images/action-camera.jpg"
+  },
+  {
+    "id": "8",
+    "productTitle": "LED Desk Lamp",
+    "originalPrice": "$59.99",
+    "ourPrice": "$44.99",
+    "discountPercentage": "25%",
+    "badgeText": "Work From Home",
+    "image": "/images/led-desk-lamp.jpg"
+  },
+  {
+    "id": "9",
+    "productTitle": "USB-C Hub",
+    "originalPrice": "$29.99",
+    "ourPrice": "$19.99",
+    "discountPercentage": "33%",
+    "badgeText": "Deal of the Day",
+    "image": "/images/usb-c-hub.jpg"
+  },
+  {
+    "id": "10",
+    "productTitle": "Smartphone Gimbal",
+    "originalPrice": "$119.99",
+    "ourPrice": "$89.99",
+    "discountPercentage": "25%",
+    "badgeText": "Content Creator's Pick",
+    "image": "/images/smartphone-gimbal.jpg"
+  },
+  {
+    "id": "11",
+    "productTitle": "Gaming Mouse",
+    "originalPrice": "$49.99",
+    "ourPrice": "$34.99",
+    "discountPercentage": "30%",
+    "badgeText": "Pro Gamer",
+    "image": "/images/gaming-mouse.jpg"
+  },
+  {
+    "id": "12",
+    "productTitle": "Mechanical Keyboard",
+    "originalPrice": "$89.99",
+    "ourPrice": "$69.99",
+    "discountPercentage": "22%",
+    "badgeText": "Office Favorite",
+    "image": "/images/mechanical-keyboard.jpg"
+  },
+  {
+    "id": "13",
+    "productTitle": "Streaming Webcam",
+    "originalPrice": "$99.99",
+    "ourPrice": "$74.99",
+    "discountPercentage": "25%",
+    "badgeText": "Live Ready",
+    "image": "/images/streaming-webcam.jpg"
+  },
+  {
+    "id": "14",
+    "productTitle": "Ergonomic Chair",
+    "originalPrice": "$299.99",
+    "ourPrice": "$229.99",
+    "discountPercentage": "23%",
+    "badgeText": "Home Office Essential",
+    "image": "/images/ergonomic-chair.jpg"
+  },
+  {
+    "id": "15",
+    "productTitle": "Monitor Stand",
+    "originalPrice": "$39.99",
+    "ourPrice": "$29.99",
+    "discountPercentage": "25%",
+    "badgeText": "Desk Upgrade",
+    "image": "/images/monitor-stand.jpg"
+  },
+  {
+    "id": "16",
+    "productTitle": "Laptop Cooling Pad",
+    "originalPrice": "$49.99",
+    "ourPrice": "$36.99",
+    "discountPercentage": "26%",
+    "badgeText": "Cool Pick",
+    "image": "/images/laptop-cooling-pad.jpg"
+  },
+  {
+    "id": "17",
+    "productTitle": "Tablet Stand",
+    "originalPrice": "$34.99",
+    "ourPrice": "$24.99",
+    "discountPercentage": "29%",
+    "badgeText": "Compact & Handy",
+    "image": "/images/tablet-stand.jpg"
+  },
+  {
+    "id": "18",
+    "productTitle": "Wireless Charging Pad",
+    "originalPrice": "$44.99",
+    "ourPrice": "$32.99",
+    "discountPercentage": "27%",
+    "badgeText": "Wireless Essential",
+    "image": "/images/wireless-charging-pad.jpg"
+  },
+  {
+    "id": "19",
+    "productTitle": "Mini Projector",
+    "originalPrice": "$179.99",
+    "ourPrice": "$134.99",
+    "discountPercentage": "25%",
+    "badgeText": "Cinematic Deal",
+    "image": "/images/mini-projector.jpg"
+  },
+  {
+    "id": "20",
+    "productTitle": "Smart LED Light Strip",
+    "originalPrice": "$59.99",
+    "ourPrice": "$44.99",
+    "discountPercentage": "25%",
+    "badgeText": "Mood Lighting",
+    "image": "/images/smart-led-light-strip.jpg"
+  }
+]

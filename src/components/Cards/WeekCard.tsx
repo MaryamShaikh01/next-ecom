@@ -14,8 +14,15 @@ import React from 'react'
 // }
 
 // export default WeekCard; 
+interface WeekCardProps {
+    badge : string;
+    title: string;
+    subtitle : string;
+    btnText : string;
+    imageUrl : string;
+}
 
-const WeekCard = (props: { badge: any; title: any; subtitle: any; btnText: any; imageUrl: any; }) => {
+const WeekCard = (props: WeekCardProps) => {
     const { badge, title, subtitle, btnText, imageUrl } = props;
     return (
         <>

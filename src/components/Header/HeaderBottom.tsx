@@ -33,17 +33,17 @@ const HeaderBottom = () => {
             <div className='px-[10px] m-auto w-[80vw] flex justify-between py-4'>
                 <div className='flex justify-between items-center gap-x-5'>
                 <Navigation></Navigation>
-                <p>Shop</p>
-                <p>Fruits & Vegetables</p>
-                <p>Beverages</p>
-                <p>Blog</p>
-                <p>Contact</p>
+                <p className='text-[15px] font-semibold'>Shop</p>
+                <p className='text-[15px] font-semibold'>Fruits & Vegetables</p>
+                <p className='text-[15px] font-semibold'>Beverages</p>
+                <p className='text-[15px] font-semibold'>Blog</p>
+                <p className='text-[15px] font-semibold'>Contact</p>
 
                 </div>
                 <div className='flex justify-between items-center gap-x-5'>
 
-                <p>Trending Products</p>
-                <p>Almost Finished <span>SALE</span></p>
+                <p className='text-[15px] font-semibold'>Trending Products</p>
+                <p className='text-[15px] font-semibold text-[var(--accent)]'>Almost Finished <span className='ml-2 px-2 py-1.5 bg-gradient-to-r from-red-600 to-orange-600 text-white rounded-lg'>SALE</span></p>
                 </div>
             </div>
 

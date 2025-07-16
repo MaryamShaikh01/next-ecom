@@ -88,7 +88,7 @@ const DealsOfDaySection = () => {
                         <span className='bg-gradient-to-r from-yellow-400 to-red-600 h-1.5'></span>
                         <span>available only : <strong>18</strong></span>
 </div>
-                        <button className='bg-[var(--add-cart-bg)] flex  gap-3 items-center p-4 rounded-xl'>
+                        <button className='bg-[var(--btn-green-bg)] flex  gap-3 items-center p-4 rounded-xl'>
                             <CartBasket />
                             <span className='text-white font-bold'>Add to Cart</span>
                         </button>

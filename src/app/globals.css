@@ -12,7 +12,11 @@
   --border : #E5E7EB;
   --badgeGreenText : #166534;
   --badgeBlueText : #0891B2;
-  --add-cart-bg : #16A34A;
+  --btn-green-bg : #16A34A;
+  --light-cream-bg :  #FFF7ED;
+  --gray-border : #E5E7EB;
+  --dark-gray : #6B7280;
+
 }
 
 /* @theme inline {

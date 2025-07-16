@@ -10,7 +10,7 @@ const Footer = () => {
 
 
 
-          <div className='flex justify-between border-b-1 border-b-[var(--border)]  py-10'>
+          <div className='flex flex-col lg:flex-row gap-y-5 justify-between gap-x-10 border-b-1 border-b-[var(--border)] pt-10 pb-7'>
             <div>
 
               <p className='text-xl font-bold text-[var(- -text-primary)]'>Join our newsletter for £10 offs</p>
@@ -31,21 +31,26 @@ const Footer = () => {
 
           </div>
 
-          <div className='grid grid-cols-[1fr_1fr_1fr_1fr_1fr] gap-x-5  py-10'>
+          <div className='flex flex-wrap xl:grid xl:grid-cols-[1fr_1fr_1fr_1fr_1fr] gap-x-10 gap-y-7  py-7'>
 
-            <div>
+            <div className='border-b-1 border-[var(--border)] pb-7 lg:pb-0 lg:border-b-0 w-full lg:w-auto '>
               <p className='text-sm font-semibold'>Do You Need Help?</p>
               <p className='text-[13px] font-normal text-[var(--text-secondary)]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, iusto!</p>
-              <div className='grid grid-cols-[auto_1fr] items-center gap-x-5 py-5'>
+
+              <div className='flex flex-col sm:flex-row sm:items-center gap-x-10 pt-5 lg:block'>
+
+              <div className='grid grid-cols-[auto_1fr] items-center gap-x-5 xl:py-5'>
                 <img src="/call-icon.svg" alt="call icon" width={20} height={20} className='w-fit h-fit row-span-2 ' />
                 <p className='text-[13px] font-normal text-[var(--text-secondary)]'>Monday-Friday : 8am - 9pm</p>
                 <Link href="tel:0 800 300-353" className='text-xl font-semibold'>0 800 300-353</Link>
               </div>
 
-              <div className='grid grid-cols-[auto_1fr] items-center gap-x-5 pb-5'>
-                <img src="/mail-icon.svg" alt="call icon" width={20} height={20} className='w-fit h-fit row-span-2 ' />
+              <div className='grid grid-cols-[auto_1fr] items-center gap-x-5 xl:pb-5'>
+                <img src="/mail-icon.svg" alt="call icon" width={20} height={20} className='min-w-fit w-fit h-fit row-span-2 ' />
                 <p className='text-[13px] font-normal text-[var(--text-secondary)]'>Need help with your order?</p>
                 <Link href="mailto:info@example.com" className='text-xl font-semibold'>info@example.com</Link>
+              </div>
+
               </div>
             </div>
 
@@ -85,35 +90,41 @@ const Footer = () => {
               <li className='text-[13px] text-[var(--text-secondary)] mb-1'>Store Locations</li>
             </ul>
 
-            <ul>
-              <li className='text-sm font-semibold mb-2'>Download Our App</li>
-              <li className='flex gap-x-5 items-center mb-2'>
+            <div className='flex flex-col sm:flex-row gap-y-7 xl:block w-full gap-x-10 border-t-1 border-[var(--border)] xl:border-t-0 pt-10 xl:pt-0'>
+              <div className='sm:grid sm:grid-cols-[200px_200px] gap-x-5 xl:block'>
+
+              <p className='text-sm font-semibold mb-2 col-span-2'>Download Our App</p>
+
+              <div className='flex flex-col xl:flex-row gap-x-5 gap-y-2 xl:items-center mb-2 '>
                 <img src="/google-play.png" alt="google play icon" width={50} height={50} className='w-fit h-fit' />
                 <p className='text-xs font-medium'>Download App Get
                   -10% Discount</p>
-              </li>
-              <li className='flex gap-x-5 items-center'>
+              </div>
+
+              <div className='flex flex-col xl:flex-row gap-x-5 gap-y-2 xl:items-center mb-2'>
                 <img src="/app-store.png" alt="app store icon" width={50} height={50} className='w-fit h-fit' />
                 <p className='text-xs font-medium'>Download App Get
                   -10% Discount</p>
-              </li>
+              </div>
+              </div>
 
-              <li className='mt-10'>
-                <span className='text-xs'>Follow us on social media:</span>
-                <ul className='flex gap-x-1 mt-2'>
+              <div className='xl:mt-10'>
+                <span className='text-sm font-semibold xl:text-xs xl:font-normal'>Follow us on social media</span>
+                <ul className='flex gap-x-1 mt-2 '>
 
-                  <li className='bg-white p-3 rounded-lg flex items-center'><img src="/facebook.svg" alt="facebook icon" width={50} height={50} className='w-fit h-fit' /></li>
-                  <li className='bg-white p-3 rounded-lg flex items-center'><img src="/twitter.svg" alt="facebook icon" width={50} height={50} className='w-fit h-fit' /></li>
-                  <li className='bg-white p-3 rounded-lg flex items-center'><img src="/instagram.svg" alt="facebook icon" width={50} height={50} className='w-fit h-fit' /></li>
-                  <li className='bg-white p-3 rounded-lg flex items-center'><img src="/linkedin.svg" alt="facebook icon" width={50} height={50} className='w-fit h-fit' /></li>
+                  <li className='bg-white p-3 rounded-lg flex items-center'><Link href="https://www.facebook.com/" target='_blank'><img src="/facebook.svg" alt="facebook icon" width={20} height={20} className='min-w-1 min-h-1' /></Link></li>
+                  <li className='bg-white p-3 rounded-lg flex items-center'><Link href="https://x.com/" target='_blank'><img src="/twitter.svg" alt="facebook icon" width={20} height={20} className='min-w-1 min-h-1' /></Link></li>
+                  <li className='bg-white p-3 rounded-lg flex items-center'><Link href="https://www.instagram.com/" target='_blank'><img src="/instagram.svg" alt="facebook icon" width={20} height={20} className='min-w-1 min-h-1' /></Link></li>
+                  <li className='bg-white p-3 rounded-lg flex items-center'><Link href="https://www.linkedin.com/" target='_blank'><img src="/linkedin.svg" alt="facebook icon" width={20} height={20} className='min-w-1 min-h-1' /></Link></li>
                 </ul>
-              </li>
-            </ul>
+              </div>
+
+            </div>
 
 
           </div>
 
-          <div className='py-10 border-t-1 border-t-[var(--border)] flex flex-row-reverse sm:flex-row justify-between'>
+          <div className='py-10 border-t-1 border-t-[var(--border)] flex flex-col xl:flex-row justify-between gap-y-5'>
             <div>
 
               <p className='text-[var(--text-secondary)] text-xs mb-3'>Copyright 2024 © Jinstore WooCommerce WordPress Theme. All right reserved. Powered by <span className='text-[var(--primary)]'>BlackRise Themes.</span></p>
@@ -126,7 +137,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <ul className='flex gap-x-5'>
+            <ul className='flex flex-wrap gap-x-5'>
               <li className='underline'><Link href="/" className='text-xs'>Terms and Conditions</Link></li>
               <li className='underline'><Link href="/" className='text-xs'>Privacy Policy</Link></li>
               <li className='underline'><Link href="/" className='text-xs'>Order Tracking</Link></li>

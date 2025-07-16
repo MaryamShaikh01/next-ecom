@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SectionHeading = (props: { title: string; description: string; }) => {
+const SectionHeading = (props: { title: string; description?: string; }) => {
     const {title , description} = props;
     return (
         <div className="flex justify-between items-center px-[10px] m-auto w-[80vw] gap-3 py-5 ">

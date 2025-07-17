@@ -14,120 +14,123 @@ import FreeShipping from './FreeShipping'
 const BillingDetails = () => {
   return (
     <>
-    <div className=''>
-
-                <FreeShipping/>
-    
       <div className=''>
 
-        <p className="text-[15px] text-[var(--text-primary)] font-bold ">Billing Details</p>
-        <form action="" className='flex flex-col gap-y-3'>
-          <div className='flex flex-col'>
-            <label htmlFor="fname" className='text-[13px]'>First Name</label>
+        <FreeShipping />
 
-            <input type="text" placeholder='First name' id="fname" className='text-[13px] rounded-lg mt-1 px-3 py-2 border-1 border-[var(--gray-border)] focus:outline-0 ' />
-          </div>
+        <div className='pt-2'>
 
-          <div className='flex flex-col'>
-            <label htmlFor="lname" className='text-[13px]'>Last Name</label>
+          <p className="text-[15px] text-[var(--text-primary)] font-bold ">Billing Details</p>
+          <form action="" className='grid grid-cols-2 gap-x-4 gap-y-3'>
+            <div className='flex flex-col'>
+              <label htmlFor="fname" className='text-[13px]'>First Name</label>
 
-            <input type="text" placeholder='Last name' id="lname" className='text-[13px] rounded-lg mt-1 px-3 py-2 border-1 border-[var(--gray-border)] focus:outline-0 ' />
-          </div>
+              <input type="text" placeholder='First name' id="fname" className='text-[13px] rounded-lg mt-1 px-3 py-2 border-1 border-[var(--gray-border)] focus:outline-0 ' />
+            </div>
 
-          <div className='flex flex-col'>
-            <label htmlFor="companyName" className='text-[13px]'>Company name (optional)</label>
+            <div className='flex flex-col'>
+              <label htmlFor="lname" className='text-[13px]'>Last Name</label>
 
-            <input type="text" placeholder='Enter company name' id="companyName" className='text-[13px] rounded-lg mt-1 px-3 py-2 border-1 border-[var(--gray-border)] focus:outline-0 ' />
-          </div>
+              <input type="text" placeholder='Last name' id="lname" className='text-[13px] rounded-lg mt-1 px-3 py-2 border-1 border-[var(--gray-border)] focus:outline-0 ' />
+            </div>
 
-          <div className='flex flex-col'>
-            <label htmlFor="countryName" className='text-[13px]'>Country / Region *</label>
+            <div className='flex flex-col col-span-2'>
+              <label htmlFor="companyName" className='text-[13px]'>Company name (optional)</label>
 
-            <Select>
-              <SelectTrigger className="">
-                <SelectValue placeholder="Select Region" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectGroup>
-                  <SelectItem value="apple">United States (US)</SelectItem>
-                  <SelectItem value="banana">Banana</SelectItem>
-                  <SelectItem value="blueberry">Blueberry</SelectItem>
-                  <SelectItem value="grapes">Grapes</SelectItem>
-                  <SelectItem value="pineapple">Pineapple</SelectItem>
-                </SelectGroup>
-              </SelectContent>
-            </Select>
-          </div>
+              <input type="text" placeholder='Enter company name' id="companyName" className='text-[13px] rounded-lg mt-1 px-3 py-2 border-1 border-[var(--gray-border)] focus:outline-0 ' />
+            </div>
 
-          <div className='flex flex-col'>
-            <label htmlFor="streetAddress" className='text-[13px]'>Street address *</label>
+            <div className='flex flex-col col-span-2'>
+              <label htmlFor="countryName" className='text-[13px]'>Country / Region *</label>
 
-            <input type="text" placeholder='House number and street name' id="streetAddress" className='text-[13px] rounded-lg mt-1 px-3 py-2 border-1 border-[var(--gray-border)] focus:outline-0 ' />
+              <Select>
+                <SelectTrigger className="">
+                  <SelectValue placeholder="Select Region" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectGroup>
+                    <SelectItem value="apple">United States (US)</SelectItem>
+                    <SelectItem value="banana">Banana</SelectItem>
+                    <SelectItem value="blueberry">Blueberry</SelectItem>
+                    <SelectItem value="grapes">Grapes</SelectItem>
+                    <SelectItem value="pineapple">Pineapple</SelectItem>
+                  </SelectGroup>
+                </SelectContent>
+              </Select>
+            </div>
 
-            <input type="text" placeholder='Apartment, suite, unit, etc. (optional)' className='text-[13px] rounded-lg mt-1 px-3 py-2 border-1 border-[var(--gray-border)] focus:outline-0 ' />
-          </div>
+            <div className='flex flex-col col-span-2'>
+              <label htmlFor="streetAddress" className='text-[13px]'>Street address *</label>
 
-          <div className='flex flex-col'>
-            <label htmlFor="town" className='text-[13px]'>Town / City *</label>
+              <input type="text" placeholder='House number and street name' id="streetAddress" className='text-[13px] rounded-lg mt-1 px-3 py-2 border-1 border-[var(--gray-border)] focus:outline-0 ' />
 
-            <input type="text" placeholder='Enter town / city' id="town" className='text-[13px] rounded-lg mt-1 px-3 py-2 border-1 border-[var(--gray-border)] focus:outline-0 ' />
-          </div>
+              <input type="text" placeholder='Apartment, suite, unit, etc. (optional)' className='text-[13px] rounded-lg mt-1 px-3 py-2 border-1 border-[var(--gray-border)] focus:outline-0 ' />
+            </div>
 
-          <div className='flex flex-col'>
-            <label htmlFor="state" className='text-[13px]'>State *</label>
+            <div className='flex flex-col col-span-2'>
+              <label htmlFor="town" className='text-[13px]'>Town / City *</label>
 
-            <Select>
-              <SelectTrigger className="">
-                <SelectValue placeholder="Select State" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectGroup>
-                  <SelectItem value="apple">Apple</SelectItem>
-                  <SelectItem value="banana">Banana</SelectItem>
-                  <SelectItem value="blueberry">Blueberry</SelectItem>
-                  <SelectItem value="grapes">Grapes</SelectItem>
-                  <SelectItem value="pineapple">Pineapple</SelectItem>
-                </SelectGroup>
-              </SelectContent>
-            </Select>
-          </div>
+              <input type="text" placeholder='Enter town / city' id="town" className='text-[13px] rounded-lg mt-1 px-3 py-2 border-1 border-[var(--gray-border)] focus:outline-0 ' />
+            </div>
 
-          <div className='flex flex-col'>
-            <label htmlFor="zipCode" className='text-[13px]'>ZIP Code *</label>
+            <div className='flex flex-col col-span-2'>
+              <label htmlFor="state" className='text-[13px]'>State *</label>
 
-            <input type="text" placeholder='Enter zipcode' id="zipCode" className='text-[13px] rounded-lg mt-1 px-3 py-2 border-1 border-[var(--gray-border)] focus:outline-0 ' />
-          </div>
+              <Select>
+                <SelectTrigger className="">
+                  <SelectValue placeholder="Select State" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectGroup>
+                    <SelectItem value="apple">Apple</SelectItem>
+                    <SelectItem value="banana">Banana</SelectItem>
+                    <SelectItem value="blueberry">Blueberry</SelectItem>
+                    <SelectItem value="grapes">Grapes</SelectItem>
+                    <SelectItem value="pineapple">Pineapple</SelectItem>
+                  </SelectGroup>
+                </SelectContent>
+              </Select>
+            </div>
 
-          <div className='flex flex-col'>
-            <label htmlFor="phone" className='text-[13px]'>Phone *</label>
+            <div className='flex flex-col col-span-2'>
+              <label htmlFor="zipCode" className='text-[13px]'>ZIP Code *</label>
 
-            <input type="tel" placeholder='Enter phone' id="phone" className='text-[13px] rounded-lg mt-1 px-3 py-2 border-1 border-[var(--gray-border)] focus:outline-0 ' />
-          </div>
+              <input type="text" placeholder='Enter zipcode' id="zipCode" className='text-[13px] rounded-lg mt-1 px-3 py-2 border-1 border-[var(--gray-border)] focus:outline-0 ' />
+            </div>
 
-          <div className='flex flex-col'>
-            <label htmlFor="email" className='text-[13px]'>Email address *</label>
+            <div className='flex flex-col col-span-2'>
+              <label htmlFor="phone" className='text-[13px]'>Phone *</label>
 
-            <input type="email" placeholder='Enter email' id="email" className='text-[13px] rounded-lg mt-1 px-3 py-2 border-1 border-[var(--gray-border)] focus:outline-0 ' />
-          </div>
+              <input type="tel" placeholder='Enter phone' id="phone" className='text-[13px] rounded-lg mt-1 px-3 py-2 border-1 border-[var(--gray-border)] focus:outline-0 ' />
+            </div>
 
-          <div className='flex items-center gap-x-2'>
+            <div className='flex flex-col col-span-2'>
+              <label htmlFor="email" className='text-[13px]'>Email address *</label>
 
-            <input type="checkbox" name="createAccount" id="createAccount" />
-            <label htmlFor="createAccount"> Create an account? </label>
-          </div>
+              <input type="email" placeholder='Enter email' id="email" className='text-[13px] rounded-lg mt-1 px-3 py-2 border-1 border-[var(--gray-border)] focus:outline-0 ' />
+            </div>
 
-          <div className='flex items-center gap-x-2'>
+            <div className='flex items-center gap-x-2 col-span-2'>
 
-            <input type="checkbox" name="diffAddress" id="diffAddress" />
-            <label htmlFor="diffAddress" className='font-semibold'> Ship to different address ? </label>
-          </div>
+              <input type="checkbox" name="createAccount" id="createAccount" />
+              <label htmlFor="createAccount" className='text-sm'> Create an account? </label>
+            </div>
 
-          <textarea name="notes" id="" cols={30} rows={3} className='text-[13px] rounded-lg mt-1 px-3 py-2 border-1 border-[var(--gray-border)] focus:outline-0 ' placeholder='Notes about your order, e.g. special notes for delivery.'>
+            <div className='flex items-center gap-x-2 col-span-2'>
 
-          </textarea>
-        </form>
+              <input type="checkbox" name="diffAddress" id="diffAddress" />
+              <label htmlFor="diffAddress" className='font-semibold text-sm'> Ship to different address ? </label>
+            </div>
+
+            <div className='flex flex-col gap-x-2 col-span-2 pt-4 '>
+              <label htmlFor="notes" className='text-[13px]'>Order notes (optional)</label>
+              <textarea name="notes" id="notes" cols={30} rows={3} className='col-span-2 text-[13px] rounded-lg mt-1 px-3 py-2 border-1 border-[var(--gray-border)] focus:outline-0 ' placeholder='Notes about your order, e.g. special notes for delivery.'>
+              </textarea>
+            </div>
+
+          </form>
+        </div>
       </div>
-    </div>
 
     </>
   )

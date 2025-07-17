@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import CartBreadCrumb from '@/components/Cart/CartBreadCrumb'
+import CartProducts from '@/components/Cart/CartProducts'
 
 const Cart = () => {
   return (
@@ -13,6 +14,8 @@ const Cart = () => {
         <button type='button' className='rounded-lg px-4 py-2 bg-black text-white font-bold cursor-pointer'>Return to Shop</button>
 
       </div>
+
+      <CartProducts/>
     </>
   )
 }

@@ -4,6 +4,8 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import { AiOutlineHeart } from "react-icons/ai";
 import { FiShare } from "react-icons/fi";
+import ProductSwiper from '@/components/SingleProduct/ProductSwiper'
+
 
 const ProductDetails = () => {
 
@@ -11,9 +13,11 @@ const ProductDetails = () => {
 
     return (
         <>
-            <div className='w-[80vw] m-auto px-[10px]  grid grid-cols-2 '>
+            <div className='w-[80vw] m-auto px-[10px]  grid col-span-1 xl:grid-cols-2 gap-10 '>
 
-                <div>Image</div>
+                <div className='grid h-fit gap-y-3'>
+                    <ProductSwiper/>
+                </div>
 
                 <div className='flex flex-col gap-y-5'>
 
@@ -104,10 +108,10 @@ const ProductDetails = () => {
             <div className='w-[80vw] m-auto px-[10px]'>
                 <div className='flex  border-b-1 border-[var(--border)]'>
 
-                    <button type='button' className={`pr-4 py-4 ${tab ? "border-b-2" : "bg-auto"}`} onClick={() => {
+                    <button type='button' className={`pr-4 py-4 border-b-2 border-b-white ${tab ? "border-b-2 !border-b-black" : "bg-auto"}`} onClick={() => {
                         setTab(true)
                     }}>Description</button>
-                    <button type='button' className={`pr-4 py-4 ${!tab ? "border-b-2" : "bg-auto"}`} onClick={() => {
+                    <button type='button' className={`pr-4 py-4 border-b-2 border-b-white  ${!tab ? "border-b-2 !border-b-black" : "bg-auto"}`} onClick={() => {
                         setTab(false)
                     }}>Reviews</button>
                 </div>

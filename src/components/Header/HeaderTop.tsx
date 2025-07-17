@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeaderTop = () => {
   return (
-    <div className='bg-[var(--primary)] py-2.5'>
+    <div className='bg-[var(--primary)] py-2.5 hidden lg:block'>
         <div className='px-[10px] m-auto sm:w-[70vw] flex items-center justify-between'>
 
 

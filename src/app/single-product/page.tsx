@@ -8,6 +8,7 @@ const SingleProduct = () => {
   return (
 <>
 <SingleProductBreadCrumb/>
+
 <ProductDetails/>
       <SectionHeading title={"Related products"} />
       <RelatedProducts/>

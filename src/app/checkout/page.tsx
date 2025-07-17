@@ -11,7 +11,7 @@ const Checkout = () => {
             <CheckoutBreadcrumb />
 
             <Coupon />
-            <div className='grid grid-cols-[1fr_300px] m-auto w-[80vw]  px-[10px]'>
+            <div className='grid col-span-1 lg:grid-cols-[1fr_300px] gap-5 m-auto w-[80vw]  px-[10px] pb-10'>
 
             <BillingDetails/>
             <YourOrder/>

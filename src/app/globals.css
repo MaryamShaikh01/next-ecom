@@ -3,160 +3,197 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary : #634C9F;
-  --secondary : #F3F4F6;
-  --accent : #DC2626;
-  --orange : #EA580C; 
-  --text-primary : #030712;
-  --text-secondary : #6B7280;
-  --border : #E5E7EB;
-  --badgeGreenText : #166534;
-  --badgeBlueText : #0891B2;
-  --btn-green-bg : #16A34A;
-  --light-cream-bg :  #FFF7ED;
-  --gray-border : #E5E7EB;
-  --dark-gray : #6B7280;
-  
-  --text-p30 : clamp(1.875rem, 0.4688rem + 4.5vw, 3rem);
+  --primary: #634c9f;
+  --secondary: #f3f4f6;
+  --accent: #dc2626;
+  --orange: #ea580c;
+  --text-primary: #030712;
+  --text-secondary: #6b7280;
+  --border: #e5e7eb;
+  --badgeGreenText: #166534;
+  --badgeBlueText: #0891b2;
+  --btn-green-bg: #16a34a;
+  --light-cream-bg: #fff7ed;
+  --gray-border: #e5e7eb;
+  --dark-gray: #6b7280;
 
+  --text-p30: clamp(1.875rem, 0.4688rem + 4.5vw, 3rem);
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
 
-    .swiper {
-        width: 100%;
-        height: 100%;
-    }
+.singleProductSwiper2 .swiper-wrapper {
+  height: 500px;
+}
 
-    .singleProductSwiper2 .swiper-wrapper {
-        height: 500px;
-    }
+.thumbSwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
 
-    .thumbSwiper .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #444;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-    }
+.thumbSwiper .swiper-slide img {
+  display: block;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+  object-position: top;
+}
 
-    .thumbSwiper .swiper-slide img {
-        display: block;
-        background-color: white;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        border-radius: 5px;
-        object-position: top;
+.swiper.thumbSwiper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-    }
+@media screen and (max-width: 500px) {
+  .mySwiper.thumbSwiper {
+    box-sizing: border-box;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
 
-    .swiper.thumbSwiper {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .mySwiper.thumbSwiper .swiper-wrapper {
+    display: flex;
+  }
 
-    @media screen and (max-width:500px) {
-        .mySwiper.thumbSwiper {
-            box-sizing: border-box;
-            padding-left: 10px !important;
-            padding-right: 10px !important;
-        }
+  .mySwiper.thumbSwiper .swiper-slide {
+    min-width: 30px !important;
+    height: 30px !important;
+  }
+}
 
-        .mySwiper.thumbSwiper .swiper-wrapper {
-            display: flex;
-        }
+@media (max-width: 1024px) {
+  .singleProductSwiper2 .swiper-slide {
+    height: 400px !important;
+  }
 
-        .mySwiper.thumbSwiper .swiper-slide {
-            min-width: 30px !important;
-            height: 30px !important;
-        }
-    }
+  .mySwiper.thumbSwiper .swiper-slide {
+    height: 80px !important;
+  }
 
+  .singleProductSwiper2 .swiper-wrapper {
+    height: 50vh !important;
+  }
+}
 
-    @media (max-width:1024px) {
+@media (min-width: 500px) and (max-width: 1440px) {
+  .mySwiper2.singleProductSwiper2 img {
+    max-height: 100vh;
+    object-position: top;
+  }
+}
 
-        .singleProductSwiper2 .swiper-slide {
-            height: 400px !important;
-        }
+.singleProductSwiper2 .swiper-wrapper {
+  height: 50vh;
+}
 
-        .mySwiper.thumbSwiper .swiper-slide {
-            height: 80px !important;
-        }
+.swiper-vertical > .swiper-wrapper {
+  height: 70vh !important;
+}
 
-        .singleProductSwiper2 .swiper-wrapper{
-            height: 50vh !important;
-        }
-    }
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
 
-    @media (min-width:500px) and (max-width : 1440px) {
-        .mySwiper2.singleProductSwiper2 img {
-            max-height: 100vh;
-            object-position: top;
-        }
-    }
+.mySwiper2.singleProductSwiper2 {
+  height: 100%;
+  width: 100%;
+}
 
-    .singleProductSwiper2 .swiper-wrapper {
-        height: 50vh;
-    }
+.mySwiper2.singleProductSwiper2 img {
+  max-height: 100vh;
+  object-position: top;
+  object-fit: contain !important;
+}
 
-    .swiper-vertical>.swiper-wrapper {
-        height: 70vh !important;
-    }
+.mySwiper.thumbSwiper {
+  height: auto;
+  box-sizing: border-box;
+}
 
-    .swiper-slide {
-        background-size: cover;
-        background-position: center;
-    }
+.mySwiper.thumbSwiper .swiper-wrapper {
+  display: flex;
+}
 
-    .mySwiper2.singleProductSwiper2 {
-        height: 100%;
-        width: 100%;
-    }
+.mySwiper.thumbSwiper .swiper-slide-thumb-active {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
 
-    .mySwiper2.singleProductSwiper2 img {
-        max-height: 100vh;
-        object-position: top;
-        object-fit: contain !important;
-    }
+.mySwiper.thumbSwiper .swiper-slide {
+  min-width: 120px;
+  /* height: 100%; */
+  height: 100px;
+  opacity: 0.4;
+}
 
-    .mySwiper.thumbSwiper {
-        height: auto;
-        box-sizing: border-box;
-    }
+.mySwiper.thumbSwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
 
-    .mySwiper.thumbSwiper .swiper-wrapper {
-        display: flex;
-    }
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-    .mySwiper.thumbSwiper .swiper-slide-thumb-active {
-        background-color: white;
-        border: 1px solid black;
-        border-radius: 10px;
-        padding: 5px;
-    }
+/* heroBanner Swiper */
+.swiper.heroBanner {
+  width: 100%;
+  /* height: fit-content; */
+  height: 100%;
+  padding-bottom: 15px;
 
-    .mySwiper.thumbSwiper .swiper-slide {
-        min-width: 120px;
-        /* height: 100%; */
-        height: 100px;
-        opacity: 0.4;
-    }
+}
+@media (min-width: 200px) and (max-width: 1024px) {
+  .swiper.heroBanner {
+    height: 500px;
+  }
+}
+.heroBanner .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #444; */
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    .mySwiper.thumbSwiper .swiper-slide-thumb-active {
-        opacity: 1;
+.heroBanner .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-    }
+.heroBanner .swiper-pagination {
+  bottom: 4px !important;
+  background: white;
+  border-radius: 50px;
+  width: fit-content !important;
+  margin-left: 50% !important;
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
-    .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
+.heroBanner .swiper-pagination-bullet-active {
+  background-color: var(--primary);
+}
 /* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

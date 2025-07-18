@@ -55,128 +55,128 @@
   },
   {
     "id": "7",
-    "productTitle": "4K Action Camera",
+    "productTitle": "Marketside Fresh Organic Bananas, Bunch",
     "originalPrice": "$149.99",
     "ourPrice": "$109.99",
     "discountPercentage": "27%",
     "badgeText": "Top Rated",
-    "image": "/images/action-camera.jpg"
+    "image": "/banana-bunch.png"
   },
   {
     "id": "8",
-    "productTitle": "LED Desk Lamp",
+    "productTitle": "Lay’s Classic Potato Snack Chips, Party Size, 13 oz Bag",
     "originalPrice": "$59.99",
     "ourPrice": "$44.99",
     "discountPercentage": "25%",
     "badgeText": "Work From Home",
-    "image": "/images/led-desk-lamp.jpg"
+    "image": "/lays.png"
   },
   {
     "id": "9",
-    "productTitle": "USB-C Hub",
+    "productTitle": "Great Value Classic Crust Pepperoni Microwave Frozen",
     "originalPrice": "$29.99",
     "ourPrice": "$19.99",
     "discountPercentage": "33%",
     "badgeText": "Deal of the Day",
-    "image": "/images/usb-c-hub.jpg"
+    "image": "/peperoni-pizza.png"
   },
   {
     "id": "10",
-    "productTitle": "Smartphone Gimbal",
+    "productTitle": "All Natural 85_15 Ground Beef – 1lb",
     "originalPrice": "$119.99",
     "ourPrice": "$89.99",
     "discountPercentage": "25%",
     "badgeText": "Content Creator's Pick",
-    "image": "/images/smartphone-gimbal.jpg"
+    "image": "/packed-meat.png"
   },
   {
     "id": "11",
-    "productTitle": "Gaming Mouse",
+    "productTitle": "ACT Anticavity Fluoride Mouthwash With Zero Alcohol",
     "originalPrice": "$49.99",
     "ourPrice": "$34.99",
     "discountPercentage": "30%",
     "badgeText": "Pro Gamer",
-    "image": "/images/gaming-mouse.jpg"
+    "image": "/flavoured-mouthwash.png"
   },
   {
     "id": "12",
-    "productTitle": "Mechanical Keyboard",
+    "productTitle": "FireSmith Flame Grilled Chicken Breast – Deli Fresh Sliced",
     "originalPrice": "$89.99",
     "ourPrice": "$69.99",
     "discountPercentage": "22%",
     "badgeText": "Office Favorite",
-    "image": "/images/mechanical-keyboard.jpg"
+    "image": "/flamed-chicken-breast.png"
   },
   {
     "id": "13",
-    "productTitle": "Streaming Webcam",
+    "productTitle": "Philadelphia Original Cream Cheese Spread – 12oz",
     "originalPrice": "$99.99",
     "ourPrice": "$74.99",
     "discountPercentage": "25%",
     "badgeText": "Live Ready",
-    "image": "/images/streaming-webcam.jpg"
+    "image": "/cream-cheese.png"
   },
   {
     "id": "14",
-    "productTitle": "Ergonomic Chair",
+    "productTitle": "Pearl Milling Company Original Syrup – 24 fl oz",
     "originalPrice": "$299.99",
     "ourPrice": "$229.99",
     "discountPercentage": "23%",
     "badgeText": "Home Office Essential",
-    "image": "/images/ergonomic-chair.jpg"
+    "image": "/pearl-syrup.png"
   },
   {
     "id": "15",
-    "productTitle": "Monitor Stand",
+    "productTitle": "Real Plant-Powered Protein Shake – Double Chocolate – 4pk_44 fl oz",
     "originalPrice": "$39.99",
     "ourPrice": "$29.99",
     "discountPercentage": "25%",
     "badgeText": "Desk Upgrade",
-    "image": "/images/monitor-stand.jpg"
+    "image": "/protein-shake.png"
   },
   {
     "id": "16",
-    "productTitle": "Laptop Cooling Pad",
+    "productTitle": "Thomas’ Everything Bagels – 20oz_6ct",
     "originalPrice": "$49.99",
     "ourPrice": "$36.99",
     "discountPercentage": "26%",
     "badgeText": "Cool Pick",
-    "image": "/images/laptop-cooling-pad.jpg"
+    "image": "/packed-bread.png"
   },
   {
     "id": "17",
-    "productTitle": "Tablet Stand",
+    "productTitle": "Take And Bake Baguettes – 14oz_2ct",
     "originalPrice": "$34.99",
     "ourPrice": "$24.99",
     "discountPercentage": "29%",
     "badgeText": "Compact & Handy",
-    "image": "/images/tablet-stand.jpg"
+    "image": "/baguettes.png"
   },
   {
     "id": "18",
-    "productTitle": "Wireless Charging Pad",
+    "productTitle": "Simple Kitchen FD Sliced Strawberries – 1.08lb",
     "originalPrice": "$44.99",
     "ourPrice": "$32.99",
     "discountPercentage": "27%",
     "badgeText": "Wireless Essential",
-    "image": "/images/wireless-charging-pad.jpg"
+    "image": "/sliced-strawberries.png"
   },
   {
     "id": "19",
-    "productTitle": "Mini Projector",
+    "productTitle": "Red Baron Frozen Hand Tossed Ultimate Pepperoni Pizza",
     "originalPrice": "$179.99",
     "ourPrice": "$134.99",
     "discountPercentage": "25%",
     "badgeText": "Cinematic Deal",
-    "image": "/images/mini-projector.jpg"
+    "image": "/hand-tossed-pizza.png"
   },
   {
     "id": "20",
-    "productTitle": "Smart LED Light Strip",
+    "productTitle": "Oscar Mayer Ham & Swiss Melt Scrambler – 3oz",
     "originalPrice": "$59.99",
     "ourPrice": "$44.99",
     "discountPercentage": "25%",
     "badgeText": "Mood Lighting",
-    "image": "/images/smart-led-light-strip.jpg"
+    "image": "/scramble-kit.png"
   }
 ]

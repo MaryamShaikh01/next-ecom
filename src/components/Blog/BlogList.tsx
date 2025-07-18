@@ -23,7 +23,7 @@ interface AllBlogPost {
 const BlogList = ({ blogData }: AllBlogPost) => {
     return (
         <>
-            <div>
+            <div className='pb-10 lg:pb-0'>
 
                 <div className='flex  flex-col gap-y-5 pb-5'>
                     <p className='text-sm font-semibold'>Blog Post List</p>

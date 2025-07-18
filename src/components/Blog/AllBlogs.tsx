@@ -28,16 +28,16 @@ const AllBlogs = ({ blogData }: AllBlogPost) => {
                                 <Image src={blog.imageUrl} alt={blog.title} width={1000} height={1000} className='object-cover object-bottom w-full h-[250px] md:h-[400px] 2xl:h-[500px] rounded-lg ' />
                                 <p className='absolute top-5 left-5 text-[var(--primary)] bg-white px-4 py-2 rounded-lg text-sm font-semibold uppercase'>{blog.badgeText}</p>
                             </div>
-                            <p className='text-4xl font-bold'>{blog.title}</p>
+                            <p className='text-xl sm:text-2xl md:text-4xl font-bold'>{blog.title}</p>
 
                             <div className='flex '>
                                 <p className='text-[var(--text-secondary)] text-sm'>{blog.date}</p>
                                 <span className='h-1.5 w-1.5 my-auto mx-3 rounded-full bg-[var(--border)]'></span>
                                 <p className='text-[var(--text-secondary)] text-sm'>{blog.tags}</p>
                             </div>
-                            <p className='text-[var(--text-secondary)] text-sm'>{blog.description}</p>
+                            <p className='text-[var(--text-secondary)] text-sm line-clamp-3'>{blog.description}</p>
 
-                            <button type='button' className='text-white bg-[var(--primary)] font-semibold px-4 py-2 rounded-lg w-fit'>Read More</button>
+                            <button type='button' className='cursor-pointer text-white bg-[var(--primary)] font-semibold px-4 py-2 rounded-lg w-fit'>Read More</button>
                         </div>
                     </>
                 ))}

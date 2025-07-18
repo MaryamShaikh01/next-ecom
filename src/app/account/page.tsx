@@ -12,12 +12,12 @@ const Account = () => {
     <>
       <LoginBreadcrumb />
 
-      <div className='m-auto w-[250px] sm:w-[500px] px-2.5 flex flex-col items-center py-10 pb-40'>
+      <div className='m-auto w-[90vw] sm:w-[500px] px-2.5 flex flex-col items-center py-10 pb-40'>
         <div className='flex pb-5 gap-x-5'>
-          <p className={`text-[28px] font-semibold cursor-pointer ${isLoggedIn ? "text-[var(--text-secondary)]" : "text-balance"}`} onClick={()=>{
+          <p className={`text-[28px] font-semibold cursor-pointer ${isLoggedIn ? "text-balance" : "text-[var(--text-secondary)]"}`} onClick={()=>{
             setIsLoggedIn(true)
           }}>Login</p>
-          <p className={`text-[28px] font-semibold cursor-pointer ${!isLoggedIn ? "text-[var(--text-secondary)]" : "text-balance"}`} onClick={()=>{
+          <p className={`text-[28px] font-semibold cursor-pointer ${!isLoggedIn ? "text-balance" : "text-[var(--text-secondary)]"}`} onClick={()=>{
             setIsLoggedIn(false)
           }}>Register</p>
 

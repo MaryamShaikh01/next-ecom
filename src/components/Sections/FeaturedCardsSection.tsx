@@ -22,7 +22,7 @@ const FeaturedCardsSection = () => {
 
         <>
 
-            <div className='m-auto w-[80vw] grid grid-cols-2 gap-x-5'>
+            <div className='m-auto sm:w-[80vw] grid grid-cols-2 gap-x-5'>
                 {featuredCardsData.map((data) => (
                     <div className=" bg-cover bg-no-repeat px-5 py-10 rounded-[12px] flex flex-col gap-y-1" style={{ backgroundImage: `url(${data.imageUrl})` }}>
                         <p className='text-[var(--orange)] font-medium text-xs'>{data.badge}</p>

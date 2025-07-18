@@ -7,12 +7,14 @@ import LikeHeart from '../svg/LikeHeart';
 
 const RelatedProducts = () => {
   return (
-<div className='mb-[40px] border-1 border-[var(--border)] rounded-[12px] m-auto w-[80vw] grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(200px,1fr))]'>
+    <div className='m-auto sm:w-[80vw] px-2.5'>
+
+<div className='mb-[40px] border-1 border-[var(--border)] rounded-[12px]  grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(200px,1fr))]'>
 
         {data.slice(0, 6).map((item) => (
 
           <div key={item.id} className='flex flex-col p-5 border-r-1 border-r-[var(--border)]'>
-            <div className="relative ">
+            <div className="relative flex items-center justify-center">
               <img src={item.image} alt={item.productTitle} className="w-[200px] h-[200px] object-cover" />
               <div className='absolute top-0 left-0 flex justify-between items-center w-full'>
                 <span className='rounded-3xl bg-[var(--accent)] px-2 py-1 text-[10px] font-extrabold text-white'>{item.discountPercentage}</span>
@@ -46,6 +48,8 @@ const RelatedProducts = () => {
         ))}
 
       </div>
+    </div>
+
   )
 }
 

@@ -22,13 +22,13 @@ const BillingDetails = () => {
 
           <p className="text-[15px] text-[var(--text-primary)] font-bold ">Billing Details</p>
           <form action="" className='grid grid-cols-2 gap-x-4 gap-y-3'>
-            <div className='flex flex-col'>
+            <div className='flex  flex-col col-span-2 sm:col-span-1'>
               <label htmlFor="fname" className='text-[13px]'>First Name</label>
 
               <input type="text" placeholder='First name' id="fname" className='text-[13px] rounded-lg mt-1 px-3 py-2 border-1 border-[var(--gray-border)] focus:outline-0 ' />
             </div>
 
-            <div className='flex flex-col'>
+            <div className='flex flex-col col-span-2 sm:col-span-1'>
               <label htmlFor="lname" className='text-[13px]'>Last Name</label>
 
               <input type="text" placeholder='Last name' id="lname" className='text-[13px] rounded-lg mt-1 px-3 py-2 border-1 border-[var(--gray-border)] focus:outline-0 ' />

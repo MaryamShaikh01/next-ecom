@@ -21,7 +21,7 @@ const AllProducts = () => {
         <>
             <BreadCrumb />
 
-            <div className=' grid grid-cols-1  xl:grid-cols-[1fr_5fr] m-auto w-[80vw] px-[10px]'>
+            <div className=' grid grid-cols-1  xl:grid-cols-[1fr_5fr] m-auto sm:w-[80vw] px-[10px]'>
 
                 <VerticalFilter filter={filter} setIsFilter={setIsFilter} />
 

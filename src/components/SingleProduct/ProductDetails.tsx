@@ -5,6 +5,8 @@ import Image from 'next/image'
 import { AiOutlineHeart } from "react-icons/ai";
 import { FiShare } from "react-icons/fi";
 import ProductSwiper from '@/components/SingleProduct/ProductSwiper'
+import { FaPlus } from "react-icons/fa6";
+import { FaMinus } from "react-icons/fa6";
 
 
 const ProductDetails = () => {
@@ -13,7 +15,7 @@ const ProductDetails = () => {
 
     return (
         <>
-            <div className='w-[80vw] m-auto px-[10px]  grid col-span-1 xl:grid-cols-2 gap-10 '>
+            <div className='sm:w-[80vw] m-auto px-[10px]  grid col-span-1 xl:grid-cols-2 gap-10 '>
 
                 <div className='grid h-fit gap-y-3'>
                     <ProductSwiper/>
@@ -47,21 +49,24 @@ const ProductDetails = () => {
                     <button type='button' className='bg-[var(--btn-green-bg)] text-white px-3.5 py-3 rounded-lg text-sm font-bold w-fit'>Order on WhatsApp</button>
 
                     <div className='bg-[var(--light-cream-bg)] border-1 border-[#FFEDD5] rounded-md p-4'>
-                        <p className='text-[var(--orange)] text-sm flex items-center font-bold gap-x-2'>Special Offer:
+                        <p className='text-[var(--orange)] text-sm flex items-center font-bold gap-x-2 flex-wrap gap-y-2'>Special Offer:
                             <div className='flex flex-wrap items-center gap-x-1'>
 
                                 <span className='bg-[#FFEDD5] border-1 border-[#FED7AA] justify-center flex items-center w-8 h-8  rounded-md'>2</span>
                                 <span className='bg-[#FFEDD5] border-1 border-[#FED7AA] justify-center flex items-center w-8 h-8 rounded-md'>4</span>
+                                <span>:</span>
                                 <span className='bg-[#FFEDD5] border-1 border-[#FED7AA] justify-center flex items-center w-8 h-8  rounded-md'>5</span>
                                 <span className='bg-[#FFEDD5] border-1 border-[#FED7AA]  justify-center flex items-center w-8 h-8 rounded-md'>6</span>
                             </div>
-                            <span>Remains until the end of the offer.</span>
+                            <span className='text-[var(--text-secondary)] font-extralight'>Remains until the end of the offer.</span>
                         </p>
                     </div>
 
-                    <div className='flex gap-x-3'>
-                        <button type='button' className='border-1 border-[var(--gray-border)] font-medium rounded-md p-4'><span>-</span> <span className='p-4'>1</span> <span>+</span></button>
-                        <button type='button' className='cursor-pointer bg-[var(--btn-green-bg)] text-white px-10 py-3 rounded-lg text-sm font-bold flex items-center gap-x-3 '> <Image src="/basket-icon.svg" alt='basket icon' width={30} height={30} className='w-5 h-5' />Add to cart</button>
+                    <div className='flex gap-x-3 gap-y-3 flex-wrap'>
+                        <button type='button' className='border-1 border-[var(--gray-border)] font-medium rounded-md flex items-center  '><FaMinus className=' mx-5 text-xs '/> <span className=' text-sm'>1</span> <FaPlus className='mx-5 text-xs'/></button>
+                        
+                        <button type='button' className='cursor-pointer bg-[var(--btn-green-bg)] text-white px-10 py-3 rounded-lg text-sm font-bold flex items-center gap-x-3'> <Image src="/basket-icon.svg" alt='basket icon' width={30} height={30} className='w-5 h-5' />Add to cart</button>
+
                         <button type='button' className='cursor-pointer bg-black text-white px-10 py-3 rounded-lg text-sm font-bold flex items-center gap-x-3 '> <Image src="/basket-icon.svg" alt='basket icon' width={10} height={10} className='w-5 h-5' />Buy Now</button>
                     </div>
 
@@ -77,7 +82,7 @@ const ProductDetails = () => {
                         </div>
                     </div>
 
-                    <div className='flex gap-x-5'>
+                    <div className='flex gap-x-5 flex-wrap gap-y-3'>
                         <button type='button' className='flex items-center gap-x-3'>
                             <span className='border-1 p-2 rounded-md border-[var(--border)]'>
                                 <AiOutlineHeart className='w-4 h-4 text-black' />
@@ -105,7 +110,7 @@ const ProductDetails = () => {
 
             </div>
 
-            <div className='w-[80vw] m-auto px-[10px]'>
+            <div className='sm:w-[80vw] m-auto px-[10px]'>
                 <div className='flex  border-b-1 border-[var(--border)]'>
 
                     <button type='button' className={`pr-4 py-4 border-b-2 border-b-white ${tab ? "border-b-2 !border-b-black" : "bg-auto"}`} onClick={() => {

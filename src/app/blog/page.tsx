@@ -41,7 +41,7 @@ const Blog = () => {
         <>
             <BlogBreadcrumb />
 
-            <div className='m-auto w-[80vw] px-2.5'>
+            <div className='m-auto sm:w-[80vw] px-2.5'>
 
                 {/* blog */}
 

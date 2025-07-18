@@ -11,7 +11,7 @@ const CartProducts = () => {
 
         <div className="bg-[var(--primary)] lg:bg-[var(--primary)] shrink-0  sm:flex sticky top-0 ">
             <div
-                className=" px-[10px] lg:py-[20px] place-items-center m-auto w-fit lg:w-[85vw] 2xl:w-[80vw] h-full hidden md:grid grid-cols-1 grid-rows-[4fr_1fr_1fr_1fr_1fr_1fr] lg:grid lg:grid-rows-1 lg:grid-cols-[4fr_1fr_1fr_1fr_1fr_1fr] justify-items-start gap-3">
+                className=" px-[10px] lg:py-[20px] place-items-center m-auto w-fit lg:w-[85vw] 2xl:sm:w-[80vw] h-full hidden md:grid grid-cols-1 grid-rows-[4fr_1fr_1fr_1fr_1fr_1fr] lg:grid lg:grid-rows-1 lg:grid-cols-[4fr_1fr_1fr_1fr_1fr_1fr] justify-items-start gap-3">
                 <p className="uppercase text-white font-semibold text-lg justify-self-start">Product Details</p>
                 <p className="uppercase text-white font-semibold text-lg">Price</p>
                 <p className="uppercase text-white font-semibold text-lg">Quantity</p>
@@ -20,7 +20,7 @@ const CartProducts = () => {
                 <p className="uppercase text-white font-semibold text-lg">Action</p>
             </div>
 
-            <div className="px-[10px] lg:py-[20px] lg:place-items-center m-auto w-fit lg:w-[85vw] 2xl:w-[80vw]   h-full grid md:hidden grid-cols-1 grid-rows-[4fr_1fr_1fr_1fr_1fr_1fr] ">
+            <div className="px-[10px] lg:py-[20px] lg:place-items-center m-auto w-fit lg:w-[85vw] 2xl:sm:w-[80vw]   h-full grid md:hidden grid-cols-1 grid-rows-[4fr_1fr_1fr_1fr_1fr_1fr] gap-y-3 ">
                 <Image src="/icons8-product-30.png" alt="" width="30" height="30" className="w-[30px] h-[100%] object-contain "/>
                 <Image src="/icons8-price-30.png" alt="" width="30" height="30" className="w-[30px] h-[100%] object-contain "/>
                 <Image src="/icons8-numbers-30.png" alt="" width="30" height="30" className="w-[30px] h-[100%] object-contain "/>
@@ -31,9 +31,9 @@ const CartProducts = () => {
 
         </div>
 
-<div className="flex overflow-x-auto pt-10">
+<div className="flex overflow-x-auto lg:pt-10">
 
-            <div className="px-[10px] m-auto lg:w-[85vw] 2xl:w-[80vw] flex lg:flex-col" id="cart-container">
+            <div className=" m-auto lg:w-[85vw] 2xl:sm:w-[80vw] flex lg:flex-col" id="cart-container">
 
                <div className="cart-item max-w-[350px] md:max-w-[100%] w-fit md:w-[100%] px-[20px]  grid grid-rows-[4fr_1fr_1fr_1fr_1fr_1fr]  md:grid md:grid-rows-1 lg:grid-cols-[4fr_1fr_1fr_1fr_1fr_1fr]  gap-3 justify-items-center items-center border-r-1 md:border-r-0"
                     id="${item.liked}">

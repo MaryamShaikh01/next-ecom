@@ -5,7 +5,7 @@ const HeaderMiddle = () => {
   return (
 <>
     <div className='border-b-1 border-b-[var(--border)] hidden lg:block'>
-      <div className='px-[10px] m-auto w-[80vw] flex justify-between py-2.5 '>
+      <div className='px-[10px] m-auto sm:w-[80vw] flex justify-between py-2.5 '>
 
       <div className='flex items-center gap-x-5'>
 

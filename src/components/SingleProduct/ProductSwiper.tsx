@@ -33,7 +33,7 @@ export default function ProductSwiper() {
         className="swiper mySwiper2 singleProductSwiper2"
       >
         <SwiperSlide>
-          <img src="/banana-bunch.png" width={1000} height={1000} />
+          <img src="/banana-bunch.png" width={500} height={300} />
         </SwiperSlide>
         <SwiperSlide>
           <img src="banana-1.png" />

@@ -4,18 +4,21 @@
 import React from 'react'
 import data from '../data.json'
 import LikeHeart from '../svg/LikeHeart';
+import Image from 'next/image'
 
 const NewArrivalsProductSection = () => {
 
 
   return (
-      <div className='mb-[40px] border-1 border-[var(--border)] rounded-[12px] m-auto w-[80vw] grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(200px,1fr))]'>
+    <div className='px-2.5 m-auto sm:w-[80vw] '>
+
+      <div className='mb-[40px] border-1 border-[var(--border)] rounded-[12px] grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(200px,1fr))]'>
 
         {data.slice(0, 6).map((item) => (
 
           <div key={item.id} className='flex flex-col p-5 border-r-1 border-r-[var(--border)]'>
-            <div className="relative ">
-              <img src={item.image} alt={item.productTitle} className="w-[200px] h-[200px] object-cover" />
+            <div className="relative flex justify-center items-center ">
+              <Image src={item.image} alt={item.productTitle} width={177} height={177} className="w-[177px] h-[177px] object-cover " />
               <div className='absolute top-0 left-0 flex justify-between items-center w-full'>
                 <span className='rounded-3xl bg-[var(--accent)] px-2 py-1 text-[10px] font-extrabold text-white'>{item.discountPercentage}</span>
               </div>
@@ -48,6 +51,8 @@ const NewArrivalsProductSection = () => {
         ))}
 
       </div>
+    </div>
+
 
 
   );

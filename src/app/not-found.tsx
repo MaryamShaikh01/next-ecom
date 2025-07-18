@@ -5,7 +5,7 @@ export default function NotFound() {
         <>
         <div className="bg-violet-100">
 
-            <div className='m-auto w-[80vw] px-[10px] flex flex-col justify-center items-center py-10 pb-20 gap-y-5'>
+            <div className='m-auto sm:w-[80vw] px-[10px] flex flex-col justify-center items-center py-10 pb-20 gap-y-5'>
 
                 <Image src="/not-found-image.svg" alt='empty cart icon' width={50} height={50} className='w-3xl h-[250px] my-7' />
                 <p className='text-6xl font-bold'>Page not found</p>

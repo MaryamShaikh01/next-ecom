@@ -3,7 +3,7 @@ import React from 'react'
 const Coupon = () => {
   return (
     <>
-      <div className="m-auto w-[80vw] px-[10px] pb-5">
+      <div className="m-auto sm:w-[80vw] px-[10px] pb-5">
         <div className="flex border-1 border-[var(--border)] rounded-[6px]">
           <input type="text" name="coupon-code" id="coupon-code" placeholder="Have a coupon? Click here to enter your code"
             className=" w-[100%] inline-block pl-2 text-sm" />

@@ -2,20 +2,22 @@ import React from 'react'
 import LikeHeart from '../svg/LikeHeart'
 import data from '../data.json'
 import CartBasket from '../svg/CartBasket'
+import Image from 'next/image'
 
 
 const DealsOfDaySection = () => {
     return (
         <>
             {/* grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] */}
-            <div className='mb-[40px] m-auto w-[80vw] grid  grid-cols-[auto_1fr] gap-x-8'>
-                <div className=' border-1 border-[var(--border)] rounded-xl '>
+            <div className=' m-auto sm:w-[80vw] flex flex-col gap-y-5 2xl:grid 2xl:grid-cols-[auto_1fr] gap-x-8'>
+
+                <div className=' border-1 border-[var(--border)] rounded-xl  flex flex-col sm:flex-row 2xl:flex-col '>
                     {data.slice(0, 2).map((item) =>
 
 
-                        <div className='flex flex-col md:grid grid-cols-[auto_1fr] p-5 border-r-1 border-r-[var(--border)] border-b-1 border-b-[var(--border)]'>
-                            <div className="relative w-[200px] h-[200px]">
-                                <img src={item.image} alt={item.productTitle} className="w-[200px] h-[200px] object-cover" />
+                        <div className='flex flex-col lg:grid grid-cols-[auto_1fr] w-full sm:items-center items-start p-5 border-r-1 border-r-[var(--border)] border-b-1 border-b-[var(--border)]'>
+                            <div className="relative flex items-center justify-center w-full">
+                                <Image src={item.image} alt={item.productTitle} width={177} height={177} className="min-w-[200px] min-h-[200px] object-cover " />
                                 <div className='absolute top-0 left-0 flex justify-between items-center w-full'>
                                     <span className='rounded-3xl bg-[var(--accent)] px-2 py-1 text-[10px] font-extrabold text-white'>{item.discountPercentage}</span>
                                     <LikeHeart></LikeHeart>
@@ -24,7 +26,7 @@ const DealsOfDaySection = () => {
                             </div>
 
 
-                            <div className=" flex flex-col justify-items-start gap-y-1">
+                            <div className=" flex flex-col justify-items-start w-full gap-y-1">
 
                                 <p className="line-clamp-1 text-sm">
                                     {item.productTitle}
@@ -50,17 +52,17 @@ const DealsOfDaySection = () => {
                 </div>
 
 
-                <div className=' !border-4 !border-[var(--accent)] rounded-xl flex flex-col md:grid grid-cols-[auto_1fr] p-5 border-r-1 border-r-[var(--border)] col-start-2 row-start-1 row-span-2 border-b-1 border-b-[var(--border)] justify-center items-center gap-5'>
+                <div className=' !border-4 !border-[var(--accent)] rounded-xl flex flex-col md:grid   grid-cols-[auto_1fr] p-5 border-r-1 border-r-[var(--border)] col-start-2 row-start-1 row-span-2 border-b-1 border-b-[var(--border)] justify-center items-center gap-5'>
 
-                    <div className="relative w-[400px] h-[400px]">
-                        <img src="/deals-large-product.png" className="w-[400px] h-[400px] object-cover" />
+                    <div className="relative w-full h-full  flex items-center justify-center">
+                        <Image src="/deals-large-product.png" alt="deals large product" width={400} height={400} className="w-[200px] h-[200px] lg:w-[400px] lg:h-[400px] 2xl:w-[400px] 2xl:h-[400px] object-cover " />
                         <div className='absolute top-0 left-0 flex justify-between items-center w-full'>
                             <span className='rounded-3xl bg-[var(--accent)] px-2 py-1 text-[10px] font-extrabold text-white'>32423</span>
                             <LikeHeart></LikeHeart>
                         </div>
                         <p className='uppercase absolute left-0 bottom-0 bg-gradient-to-r from-lime-300  to-green-300 text-[10px] font-extrabold w-fit rounded-[14px] px-2.5 py-1 text-[var(--badgeGreenText)]'>Cold Sale</p>
                     </div>
-                    <div className=" flex flex-col justify-items-start gap-y-1 pr-5">
+                    <div className=" flex flex-col justify-items-start gap-y-1 ">
                         <span className='flex items-center gap-3'>
 
                             <svg xmlns="http://www.w3.org/2000/svg" width="80" height="20" viewBox="0 0 80 15" fill="none">

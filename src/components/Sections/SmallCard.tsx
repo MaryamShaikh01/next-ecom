@@ -1,5 +1,8 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 const Card = () => {
 
@@ -26,11 +29,12 @@ const Card = () => {
         },
     ]
 
+    const pathname = usePathname();
     return (
 
         <>
 
-            <div className=' flex px-[10px] m-auto w-[80vw] gap-4 pt-10 pb-5'>
+            <div className={`grid lg:grid-cols-4 grid-cols-[repeat(auto-fit,minmax(200px,1fr))]  px-[10px] m-auto sm:w-[80vw] gap-4 pb-5 ${pathname === '/contact' ? 'pt-0' : 'pt-10'}`}>
 
                 {
                     cards.map((item) => (

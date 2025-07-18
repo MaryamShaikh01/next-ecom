@@ -8,13 +8,13 @@ const ContactDetails = () => {
   return (
     <>
 
-        <div className='grid grid-cols-2  border-b-1 border-[var(--border)] pb-10 '>
+        <div className='flex flex-col sm:grid sm:grid-cols-2  border-b-1 border-[var(--border)] pb-5 sm:pb-10 '>
                 <p className='col-span-2 text-[22px] font-semibold'>Our Offices</p>
                 <p className='col-span-2 text-[13px] text-[var(--text-secondary)] pb-6'>On dekande mydurtad mora även om skurkstat. Semirade timaheten rena. Radiogen pasam inte loba även om
                     prerade i garanterad traditionell specialitet till bebel. Ev is sönde. Tun gps-väst att epiligt. Diliga tresk dira. Ens
                     biov dijevis.</p>
 
-                <div className='grid grid-cols-[auto_1fr] gap-x-3 '>
+                <div className='grid grid-cols-[auto_1fr] gap-x-3 pb-5 sm:pb-0'>
                     <TfiLocationPin className='row-span-5 min-w-5 min-h-5' />
                     <span className='text-xs'>United States</span>
                     <p className='text-lg font-medium'>United States  Office</p>

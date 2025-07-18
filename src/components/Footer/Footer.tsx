@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <div className='bg-[var(--secondary)]'>
 
-        <div className='px-[10px] m-auto w-[80vw]'>
+        <div className='px-[10px] m-auto sm:w-[80vw]'>
 
 
 

@@ -24,12 +24,12 @@ const BestSellerProductSection = () => {
     ]
     return (
         <>
-            <div className='m-auto w-[80vw] grid grid-cols-2 lg:grid-cols-[1fr_1fr_350px_1fr_1fr]'>
+            <div className='m-auto sm:w-[80vw] min-[400px]:grid grid-cols-2 md:grid-cols-[1fr_1fr_1fr] lg:grid-cols-[1fr_1fr_1fr_1fr] xl:grid-cols-[1fr_1fr_350px_1fr_1fr]'>
 
-                {data.slice(0, 2).map((item) => 
+                {data.slice(12,14).map((item) => 
 
                     <div key={item.id} className='flex flex-col p-5 border-r-1 border-r-[var(--border)]'>
-                        <div className="relative ">
+                        <div className="relative flex justify-center items-center  ">
                             <img src={item.image} alt={item.productTitle} className="w-[200px] h-[200px] object-cover" />
                             <div className='absolute top-0 left-0 flex justify-between items-center w-full'>
                                 <span className='rounded-3xl bg-[var(--accent)] px-2 py-1 text-[10px] font-extrabold text-white'>{item.discountPercentage}</span>
@@ -62,17 +62,21 @@ const BestSellerProductSection = () => {
                     </div>
              )}
 
-                <div className=" bg-cover bg-no-repeat px-5 py-10  flex flex-col gap-y-1 bg-[url('/banner-10.png')]">
-                    <p className='text-[var(--orange)] font-medium text-xs'>A different kind of grocery</p>
-                    <p className='text-[22px] w-[70%] text-[var(--text-primary)] font-bold'>A different kind of grocery store</p>
-                    <p className='text-[var(--text-secondary)] text-[13px]'>A different kind of grocery store</p>
-                    <button type='button' className='mt-2 border-1 border-var(--border) rounded-full bg-white text-xs font-bold px-[12px] py-[8px] flex gap-2 items-center w-fit'>text<img src="/Icon.svg" alt="" /></button>
-                </div>
 
-                {data.slice(4, 6).map((item) => [
+
+
+
+            
+                <div className="  bg-cover bg-no-repeat px-5 py-10  flex flex-col gap-y-1 bg-[url('/banner-10.png')] col-start-1 row-start-1 xl:col-start-auto xl:row-start-auto">
+                    <p className='text-[var(--orange)] font-medium text-xs'>Only This Week</p>
+                    <p className='text-[22px] w-[70%] text-[var(--text-primary)] font-bold'>Get your everyday needs here with us</p>
+                    <p className='text-[var(--text-secondary)] text-[13px]'>A different kind of grocery store</p>
+                    <button type='button' className='mt-2 border-1 border-var(--border) rounded-full bg-white text-xs font-bold px-[12px] py-[8px] flex gap-2 items-center w-fit'>Shop Now<img src="/Icon.svg" alt="" /></button>
+                </div>
+                {data.slice(14,16).map((item) => [
 
                     <div key={item.id} className='flex flex-col p-5 border-r-1 border-r-[var(--border)]'>
-                        <div className="relative ">
+                        <div className="relative  flex justify-center items-center ">
                             <img src={item.image} alt={item.productTitle} className="w-[200px] h-[200px] object-cover" />
                             <div className='absolute top-0 left-0 flex justify-between items-center w-full'>
                                 <span className='rounded-3xl bg-[var(--accent)] px-2 py-1 text-[10px] font-extrabold text-white'>{item.discountPercentage}</span>
@@ -107,15 +111,12 @@ const BestSellerProductSection = () => {
 
             </div>
 
-            <div className='m-auto w-[80vw] grid grid-cols-2 lg:grid-cols-[1fr_1fr_350px_1fr_1fr]'>
+            <div className='m-auto sm:w-[80vw] min-[400px]:grid grid-cols-2 md:grid-cols-[1fr_1fr_1fr] lg:grid-cols-[1fr_1fr_1fr_1fr] xl:grid-cols-[1fr_1fr_350px_1fr_1fr]'>
 
-                {data.slice(0, 2).map((item) => [
-
-
-
+                {data.slice(16,18).map((item) => [
 
                     <div key={item.id} className='flex flex-col p-5 border-r-1 border-r-[var(--border)]'>
-                        <div className="relative ">
+                        <div className="relative flex justify-center items-center">
                             <img src={item.image} alt={item.productTitle} className="w-[200px] h-[200px] object-cover" />
                             <div className='absolute top-0 left-0 flex justify-between items-center w-full'>
                                 <span className='rounded-3xl bg-[var(--accent)] px-2 py-1 text-[10px] font-extrabold text-white'>{item.discountPercentage}</span>
@@ -148,7 +149,7 @@ const BestSellerProductSection = () => {
                     </div>
                 ])}
 
-                <div className=" bg-cover bg-no-repeat px-5 py-10  flex flex-col gap-y-1 bg-[url('/banner-11.png')]">
+                <div className="  bg-cover bg-no-repeat px-5 py-10  flex flex-col gap-y-1 bg-[url('/banner-11.png')] col-start-1 row-start-1 xl:col-start-auto xl:row-start-auto">
                     <p className='text-[var(--orange)] font-medium text-xs'>Only This Week</p>
                     <p className='text-[22px] w-[70%] text-[var(--text-primary)] font-bold'>Get your everyday needs here with us</p>
                     <p className='text-[var(--text-secondary)] text-[13px]'>A different kind of grocery store</p>
@@ -158,10 +159,10 @@ const BestSellerProductSection = () => {
 
 
 
-                {data.slice(4, 6).map((item) => [
+                {data.slice(18,20).map((item) => [
 
                     <div key={item.id} className='flex flex-col p-5 border-r-1 border-r-[var(--border)]'>
-                        <div className="relative ">
+                        <div className="relative flex justify-center items-center">
                             <img src={item.image} alt={item.productTitle} className="w-[200px] h-[200px] object-cover" />
                             <div className='absolute top-0 left-0 flex justify-between items-center w-full'>
                                 <span className='rounded-3xl bg-[var(--accent)] px-2 py-1 text-[10px] font-extrabold text-white'>{item.discountPercentage}</span>

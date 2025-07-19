@@ -154,16 +154,22 @@
 /* heroBanner Swiper */
 .swiper.heroBanner {
   width: 100%;
-  /* height: fit-content; */
-  height: 100%;
+  height: 600px;
   padding-bottom: 15px;
 
 }
-@media (min-width: 200px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .swiper.heroBanner {
     height: 500px;
   }
 }
+
+@media (min-width: 200px) and (max-width: 768px) {
+  .swiper.heroBanner{
+    height: 350px;
+  }
+}
+
 .heroBanner .swiper-slide {
   text-align: center;
   font-size: 18px;

@@ -1,5 +1,13 @@
 import React from 'react'
 import FilterSlideBtn from './FilterSlideBtn'
+import {
+    Sheet,
+    SheetContent,
+    SheetDescription,
+    SheetHeader,
+    SheetTitle,
+    SheetTrigger,
+} from "@/components/ui/sheet"
 
 const VerticalFilter = (props: any) => {
 
@@ -9,8 +17,10 @@ const VerticalFilter = (props: any) => {
         <>
             <div className='flex flex-col'>
 
-                <FilterSlideBtn filter={filter} setIsFilter={setIsFilter} />
+                {/* <FilterSlideBtn filter={filter} setIsFilter={setIsFilter} /> */}
 
+
+              
                 <div className={`absolute left-0 right-0 w-[30vw] h-[100vh] z-50 p-10 xl:block xl:static rounded-tr-xl xl:w-auto xl:h-auto xl:bg-transparent xl:p-0 xl:pr-10 ${filter ? "bg-pink-600 hidden" : "bg-[#f3eeff]"}`}>
 
                     <details className="group xl:border-t-1 xl:border-b-1 border-[var(--border)] pb-5 xl:py-5">

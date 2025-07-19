@@ -39,7 +39,7 @@ const MoreProductsSection = () => {
 
     <div className='grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-3 md:gap-x-8 md:gap-y-8 min-h-[500px] px-2.5 m-auto sm:w-[80vw] '>
         {moreProductCardsData.map((card) => (
-          <div className=" bg-cover bg-no-repeat bg-center px-5 py-10 rounded-[12px] flex flex-col gap-y-1" style={{ backgroundImage: `url(${card.imageUrl})` }}>
+          <div className=" min-[350px]:bg-cover bg-no-repeat bg-center px-5 py-10 rounded-[12px] flex flex-col gap-y-1" style={{ backgroundImage: `url(${card.imageUrl})` }}>
                     <p className='text-[var(--orange)] font-medium text-xs'>{card.badge}</p>
                      <p className='text-[22px] w-[80%] text-[var(--text-primary)] font-bold'>{card.title}</p>
                      <p className='text-[var(--text-secondary)] text-[13px]'>{card.subtitle}</p>

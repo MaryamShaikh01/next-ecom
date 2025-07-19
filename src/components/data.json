@@ -5,8 +5,9 @@
     "originalPrice": "$59.99",
     "ourPrice": "$39.99",
     "discountPercentage": "33%",
-    "badgeText": "Best Seller",
-    "image": "/apple-juice.png"
+    "image": "/apple-juice.png" , 
+    "badgeText": "ORGANIC",
+    "badgeImage" : "/leaf-icon.svg"
   },
   {
     "id": "2",
@@ -14,8 +15,9 @@
     "originalPrice": "$199.99",
     "ourPrice": "$149.99",
     "discountPercentage": "25%",
-    "badgeText": "Hot Deal",
-    "image": "/pizza.png"
+    "image": "/pizza.png",
+    "badgeText": "COLD SALE",
+    "badgeImage" : "/snowflake-blue.svg"
   },
   {
     "id": "3",
@@ -23,8 +25,9 @@
     "originalPrice": "$89.99",
     "ourPrice": "$69.99",
     "discountPercentage": "22%",
-    "badgeText": "Limited Offer",
-    "image": "/orange-juice.png"
+    "image": "/orange-juice.png",
+     "badgeText": "ORGANIC",
+    "badgeImage" : "leaf-icon.svg"
   },
   {
     "id": "4",
@@ -32,8 +35,9 @@
     "originalPrice": "$129.99",
     "ourPrice": "$99.99",
     "discountPercentage": "23%",
-    "badgeText": "Trending",
-    "image": "/pizza.png"
+    "image": "/pizza.png",
+       "badgeText": "COLD SALE",
+    "badgeImage" : "snowflake-blue.svg"
   },
   {
     "id": "5",
@@ -41,8 +45,11 @@
     "originalPrice": "$49.99",
     "ourPrice": "$34.99",
     "discountPercentage": "30%",
-    "badgeText": "Editor's Pick",
-    "image": "/cantaloupe.png"
+    "image": "/cantaloupe.png",
+     "badgeText": "ORGANIC",
+    "badgeImage" : "leaf-icon.svg"
+    
+
   },
   {
     "id": "6",
@@ -50,16 +57,18 @@
     "originalPrice": "$39.99",
     "ourPrice": "$29.99",
     "discountPercentage": "25%",
-    "badgeText": "Must Have",
-    "image": "/toilet-paper.png"
-  },
+    "image": "/toilet-paper.png",
+    "badgeText" : "",
+    "badgeImage" : ""
+   },
   {
     "id": "7",
     "productTitle": "Marketside Fresh Organic Bananas, Bunch",
     "originalPrice": "$149.99",
     "ourPrice": "$109.99",
     "discountPercentage": "27%",
-    "badgeText": "Top Rated",
+     "badgeText": "ORGANIC",
+    "badgeImage" : "leaf-icon.svg",
     "image": "/banana-bunch.png"
   },
   {
@@ -68,7 +77,8 @@
     "originalPrice": "$59.99",
     "ourPrice": "$44.99",
     "discountPercentage": "25%",
-    "badgeText": "Work From Home",
+       "badgeText": "",
+    "badgeImage" : "",
     "image": "/lays.png"
   },
   {
@@ -77,8 +87,10 @@
     "originalPrice": "$29.99",
     "ourPrice": "$19.99",
     "discountPercentage": "33%",
-    "badgeText": "Deal of the Day",
+      "badgeText": "COLD SALE",
+    "badgeImage" : "snowflake-blue.svg",
     "image": "/peperoni-pizza.png"
+    
   },
   {
     "id": "10",
@@ -86,7 +98,9 @@
     "originalPrice": "$119.99",
     "ourPrice": "$89.99",
     "discountPercentage": "25%",
-    "badgeText": "Content Creator's Pick",
+    "badgeText": "",
+    "badgeImage" : "",
+
     "image": "/packed-meat.png"
   },
   {
@@ -95,7 +109,8 @@
     "originalPrice": "$49.99",
     "ourPrice": "$34.99",
     "discountPercentage": "30%",
-    "badgeText": "Pro Gamer",
+      "badgeText": "",
+    "badgeImage" : "",
     "image": "/flavoured-mouthwash.png"
   },
   {
@@ -104,7 +119,8 @@
     "originalPrice": "$89.99",
     "ourPrice": "$69.99",
     "discountPercentage": "22%",
-    "badgeText": "Office Favorite",
+     "badgeText": "",
+    "badgeImage" : "",
     "image": "/flamed-chicken-breast.png"
   },
   {
@@ -113,7 +129,8 @@
     "originalPrice": "$99.99",
     "ourPrice": "$74.99",
     "discountPercentage": "25%",
-    "badgeText": "Live Ready",
+     "badgeText": "",
+    "badgeImage" : "",
     "image": "/cream-cheese.png"
   },
   {
@@ -122,7 +139,8 @@
     "originalPrice": "$299.99",
     "ourPrice": "$229.99",
     "discountPercentage": "23%",
-    "badgeText": "Home Office Essential",
+  "badgeText": "",
+    "badgeImage" : "",
     "image": "/pearl-syrup.png"
   },
   {
@@ -131,7 +149,8 @@
     "originalPrice": "$39.99",
     "ourPrice": "$29.99",
     "discountPercentage": "25%",
-    "badgeText": "Desk Upgrade",
+   "badgeText": "",
+    "badgeImage" : "",
     "image": "/protein-shake.png"
   },
   {
@@ -140,7 +159,8 @@
     "originalPrice": "$49.99",
     "ourPrice": "$36.99",
     "discountPercentage": "26%",
-    "badgeText": "Cool Pick",
+  "badgeText": "",
+    "badgeImage" : "",
     "image": "/packed-bread.png"
   },
   {
@@ -149,7 +169,8 @@
     "originalPrice": "$34.99",
     "ourPrice": "$24.99",
     "discountPercentage": "29%",
-    "badgeText": "Compact & Handy",
+     "badgeText": "",
+    "badgeImage" : "",
     "image": "/baguettes.png"
   },
   {
@@ -158,7 +179,7 @@
     "originalPrice": "$44.99",
     "ourPrice": "$32.99",
     "discountPercentage": "27%",
-    "badgeText": "Wireless Essential",
+   
     "image": "/sliced-strawberries.png"
   },
   {
@@ -167,7 +188,8 @@
     "originalPrice": "$179.99",
     "ourPrice": "$134.99",
     "discountPercentage": "25%",
-    "badgeText": "Cinematic Deal",
+  "badgeText": "",
+    "badgeImage" : "",
     "image": "/hand-tossed-pizza.png"
   },
   {
@@ -176,7 +198,8 @@
     "originalPrice": "$59.99",
     "ourPrice": "$44.99",
     "discountPercentage": "25%",
-    "badgeText": "Mood Lighting",
+   "badgeText": "",
+    "badgeImage" : "",
     "image": "/scramble-kit.png"
   }
 ]

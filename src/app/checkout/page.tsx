@@ -1,3 +1,4 @@
+import HorizontalFilters from '@/components/blocks/category-filters/horizontal-filters'
 import BillingDetails from '@/components/Checkout/BillingDetails'
 import CheckoutBreadcrumb from '@/components/Checkout/CheckoutBreadcrumb'
 import Coupon from '@/components/Checkout/Coupon'
@@ -8,13 +9,11 @@ import React from 'react'
 const Checkout = () => {
     return (
         <>
-            <CheckoutBreadcrumb />
-
+            <CheckoutBreadcrumb/>
             <Coupon />
             <div className='grid col-span-1 lg:grid-cols-[1fr_300px] gap-5 m-auto sm:w-[80vw]  px-[10px] pb-10'>
-
-            <BillingDetails/>
-            <YourOrder/>
+                <BillingDetails />
+                <YourOrder />
             </div>
         </>
     )

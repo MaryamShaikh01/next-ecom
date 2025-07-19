@@ -11,8 +11,6 @@ const AllFilteredProducts = (props: any) => {
         <>
             {
                 isGrid ? (
-
-
                     <div className='order-1 border-[var(--border)] rounded-[12px] grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] pb-10 border-1'>
                         {data.map((item) =>
                             <div key={item.id} className='flex flex-col p-5 border-r-1 border-r-[var(--border)]'>

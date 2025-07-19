@@ -26,7 +26,7 @@ const WeekCard = (props: WeekCardProps) => {
     const { badge, title, subtitle, btnText, imageUrl } = props;
     return (
         <>
-            <div className=" bg-cover bg-no-repeat px-5 py-10 rounded-[12px]  flex flex-col gap-y-1" style={{ backgroundImage: `url(${imageUrl})` }}>
+            <div className="bg-center min-[400px]:bg-cover bg-no-repeat px-5 py-5 sm:py-10 rounded-[12px]  flex flex-col gap-y-1" style={{ backgroundImage: `url(${imageUrl})` }}>
                     <p className='text-[var(--orange)] font-medium text-xs'>{badge}</p>
                      <p className='text-[22px] w-[70%] text-[var(--text-primary)] font-bold'>{title}</p>
                      <p className='text-[var(--text-secondary)] text-[13px]'>{subtitle}</p>

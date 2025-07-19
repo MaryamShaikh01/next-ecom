@@ -21,10 +21,9 @@ const FeaturedCardsSection = () => {
     return (
 
         <>
-
-            <div className='m-auto sm:w-[80vw] grid grid-cols-2 gap-x-5'>
+            <div className='m-auto px-2.5 sm:w-[80vw] grid sm:grid-cols-2 gap-y-2.5 gap-x-2.5 sm:gap-x-5'>
                 {featuredCardsData.map((data) => (
-                    <div className=" bg-cover bg-no-repeat px-5 py-10 rounded-[12px] flex flex-col gap-y-1" style={{ backgroundImage: `url(${data.imageUrl})` }}>
+                    <div className=" sm:bg-cover bg-no-repeat px-5 py-10 rounded-[12px] bg-center flex flex-col gap-y-1" style={{ backgroundImage: `url(${data.imageUrl})` }}>
                         <p className='text-[var(--orange)] font-medium text-xs'>{data.badge}</p>
                         <p className='text-[22px] w-[70%] text-[var(--text-primary)] font-bold'>{data.title}</p>
                         <p className='text-[var(--text-secondary)] text-[13px]'>{data.subtitle}</p>
@@ -33,9 +32,6 @@ const FeaturedCardsSection = () => {
                     </div>
                 ))}
             </div>
-
-
-
         </>
     )
 }

@@ -53,7 +53,7 @@ const HeaderBottom = () => {
             </div>
 
 
-            <div className='px-[10px] m-auto sm:w-[80vw] hidden lg:flex justify-between py-4'>
+            <div className='px-[10px] m-auto sm:w-[80vw] flex-wrap hidden lg:flex justify-between py-4'>
                 <div className='flex justify-between items-center gap-x-5'>
 
                     <Select>
@@ -92,10 +92,10 @@ const HeaderBottom = () => {
                     <p className='text-[15px] font-semibold'>Contact</p>
 
                 </div>
-                <div className='flex justify-between items-center gap-x-5'>
+                <div className='flex justify-between  items-center gap-x-5'>
 
                     <Select>
-                        <SelectTrigger className="w-[180px] text-[15px] font-semibold border-none shadow-none cursor-pointer">
+                        <SelectTrigger className="w-[160px] mt-0 text-[15px] gap-0 px-0 py-0 font-semibold border-none shadow-none cursor-pointer">
                             <SelectValue placeholder="Trending Products" />
                         </SelectTrigger>
                         <SelectContent>
@@ -112,7 +112,7 @@ const HeaderBottom = () => {
 
 
                     <Select>
-                        <SelectTrigger className="w-[230px] text-[15px] font-semibold text-[var(--accent)] border-none shadow-none cursor-pointer">
+                        <SelectTrigger className="w-[200px] mt-0 text-[15px] gap-0 px-0 py-0  font-semibold text-[var(--accent)] border-none shadow-none cursor-pointer">
                             <SelectValue placeholder="Almost Finished" />
                             <span className=' px-2 py-1 bg-gradient-to-r from-red-600 to-orange-600 text-white rounded-lg'>SALE</span>
                         </SelectTrigger>

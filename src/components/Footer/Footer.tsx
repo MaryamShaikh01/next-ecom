@@ -56,38 +56,38 @@ const Footer = () => {
 
             <ul className=''>
               <li className='text-sm font-semibold mb-2'>Make Money With Us</li>
-              <li className='text-[13px] text-[var(--text-secondary)] mb-1'>Sell on Grogin</li>
-              <li className='text-[13px] text-[var(--text-secondary)] mb-1'>Sell Your Services on Grogin</li>
-              <li className='text-[13px] text-[var(--text-secondary)] mb-1'>Sell on Grogin Business</li>
-              <li className='text-[13px] text-[var(--text-secondary)] mb-1'>Sell Your Apps on Grogin</li>
-              <li className='text-[13px] text-[var(--text-secondary)] mb-1'>Become an Affilate</li>
-              <li className='text-[13px] text-[var(--text-secondary)] mb-1'>Advertise Your Products</li>
-              <li className='text-[13px] text-[var(--text-secondary)] mb-1'>Sell-Publish with Us</li>
-              <li className='text-[13px] text-[var(--text-secondary)] mb-1'>Become an Blowwe Vendor</li>
+              <li className='text-[13px] text-[var(--text-secondary)] mb-1'><Link href="/">Sell on Grogin</Link></li>
+              <li className='text-[13px] text-[var(--text-secondary)] mb-1'><Link href="/">Sell Your Services on Grogin</Link></li>
+              <li className='text-[13px] text-[var(--text-secondary)] mb-1'><Link href="/">Sell on Grogin Business</Link></li>
+              <li className='text-[13px] text-[var(--text-secondary)] mb-1'><Link href="/">Sell Your Apps on Grogin</Link></li>
+              <li className='text-[13px] text-[var(--text-secondary)] mb-1'><Link href="/">Become an Affilate</Link></li>
+              <li className='text-[13px] text-[var(--text-secondary)] mb-1'><Link href="/">Advertise Your Products</Link></li>
+              <li className='text-[13px] text-[var(--text-secondary)] mb-1'><Link href="/">Sell-Publish with Us</Link></li>
+              <li className='text-[13px] text-[var(--text-secondary)] mb-1'><Link href="/">Become an Blowwe Vendor</Link></li>
             </ul>
 
             <ul>
               <li className='text-sm font-semibold mb-2'>Let Us Help You</li>
-              <li className='text-[13px] text-[var(--text-secondary)] mb-1'>Accessibility Statement</li>
-              <li className='text-[13px] text-[var(--text-secondary)] mb-1'>Your Orders</li>
-              <li className='text-[13px] text-[var(--text-secondary)] mb-1'>Returns & Replacements</li>
-              <li className='text-[13px] text-[var(--text-secondary)] mb-1'>Shipping Rates & Policies</li>
-              <li className='text-[13px] text-[var(--text-secondary)] mb-1'>Refund and Returns Policy</li>
-              <li className='text-[13px] text-[var(--text-secondary)] mb-1'>Privacy Policy</li>
-              <li className='text-[13px] text-[var(--text-secondary)] mb-1'>Terms and Conditions</li>
-              <li className='text-[13px] text-[var(--text-secondary)] mb-1'>Cookie Settings</li>
-              <li className='text-[13px] text-[var(--text-secondary)] mb-1'>Help Center</li>
+              <li className='text-[13px] text-[var(--text-secondary)] mb-1'><Link href="/">Accessibility Statement</Link></li>
+              <li className='text-[13px] text-[var(--text-secondary)] mb-1'><Link href="/">Your Orders</Link></li>
+              <li className='text-[13px] text-[var(--text-secondary)] mb-1'><Link href="/">Returns & Replacements</Link></li>
+              <li className='text-[13px] text-[var(--text-secondary)] mb-1'><Link href="/">Shipping Rates & Policies</Link></li>
+              <li className='text-[13px] text-[var(--text-secondary)] mb-1'><Link href="/">Refund and Returns Policy</Link></li>
+              <li className='text-[13px] text-[var(--text-secondary)] mb-1'><Link href="/">Privacy Policy</Link></li>
+              <li className='text-[13px] text-[var(--text-secondary)] mb-1'><Link href="/">Terms and Conditions</Link></li>
+              <li className='text-[13px] text-[var(--text-secondary)] mb-1'><Link href="/">Cookie Settings</Link></li>
+              <li className='text-[13px] text-[var(--text-secondary)] mb-1'><Link href="/">Help Center</Link></li>
             </ul>
 
             <ul className=''>
               <li className='text-sm font-semibold mb-2'>Get to Know Us</li>
-              <li className='text-[13px] text-[var(--text-secondary)] mb-1'>Careers for Grogin</li>
-              <li className='text-[13px] text-[var(--text-secondary)] mb-1'>About Grogin</li>
-              <li className='text-[13px] text-[var(--text-secondary)] mb-1'>Inverstor Relations</li>
-              <li className='text-[13px] text-[var(--text-secondary)] mb-1'>Grogin Devices</li>
-              <li className='text-[13px] text-[var(--text-secondary)] mb-1'>Customer reviews</li>
-              <li className='text-[13px] text-[var(--text-secondary)] mb-1'>Social Responsibility</li>
-              <li className='text-[13px] text-[var(--text-secondary)] mb-1'>Store Locations</li>
+              <li className='text-[13px] text-[var(--text-secondary)] mb-1'><Link href="/">Careers for Grogin</Link></li>
+              <li className='text-[13px] text-[var(--text-secondary)] mb-1'><Link href="/">About Grogin</Link></li>
+              <li className='text-[13px] text-[var(--text-secondary)] mb-1'><Link href="/">Inverstor Relations</Link></li>
+              <li className='text-[13px] text-[var(--text-secondary)] mb-1'><Link href="/">Grogin Devices</Link></li>
+              <li className='text-[13px] text-[var(--text-secondary)] mb-1'><Link href="/">Customer reviews</Link></li>
+              <li className='text-[13px] text-[var(--text-secondary)] mb-1'><Link href="/">Social Responsibility</Link></li>
+              <li className='text-[13px] text-[var(--text-secondary)] mb-1'><Link href="/">Store Locations</Link></li>
             </ul>
 
             <div className='flex flex-col sm:flex-row gap-y-7 xl:block w-full gap-x-10 border-t-1 border-[var(--border)] xl:border-t-0 pt-10 xl:pt-0'>
@@ -95,17 +95,17 @@ const Footer = () => {
 
               <p className='text-sm font-semibold mb-2 col-span-2'>Download Our App</p>
 
-              <div className='flex flex-col xl:flex-row gap-x-5 gap-y-2 xl:items-center mb-2 '>
+              <Link href="/" className='flex flex-col xl:flex-row gap-x-5 gap-y-2 xl:items-center mb-2 '>
                 <img src="/google-play.png" alt="google play icon" width={50} height={50} className='w-fit h-fit' />
                 <p className='text-xs font-medium'>Download App Get
                   -10% Discount</p>
-              </div>
+              </Link>
 
-              <div className='flex flex-col xl:flex-row gap-x-5 gap-y-2 xl:items-center mb-2'>
+              <Link href="/" className='flex flex-col xl:flex-row gap-x-5 gap-y-2 xl:items-center mb-2'>
                 <img src="/app-store.png" alt="app store icon" width={50} height={50} className='w-fit h-fit' />
                 <p className='text-xs font-medium'>Download App Get
                   -10% Discount</p>
-              </div>
+              </Link>
               </div>
 
               <div className='xl:mt-10'>

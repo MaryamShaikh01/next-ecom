@@ -33,12 +33,9 @@ export default function Home() {
       <BestSellerProductSection />
       <TagSection />
       <SectionHeading title={"Deals of the Day"} description={"The freshest greengrocer products are waiting for you"} />
-
       <DealsOfDaySection />
       <SectionHeading title={"Popular Companies"} description={"Some of the new products arriving this weeks"} />
       <TestimonialSection />
-
-
     </>
   )
 }

@@ -13,14 +13,14 @@ const DealsOfDaySection = () => {
                 {/* grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] */}
                 <div className=' flex flex-col gap-y-5 2xl:grid 2xl:grid-cols-[auto_1fr] gap-x-8'>
 
-                    <div className=' border-1 border-[var(--border)] rounded-xl  flex flex-col min-[400px]:flex-row 2xl:flex-col '>
+                    <div className=' border-1 border-[var(--border)] rounded-xl  flex flex-col min-[340px]:flex-row 2xl:flex-col '>
                         {data.slice(0, 2).map((item) =>
 
 
-                            <div className='flex flex-col lg:grid grid-cols-[auto_1fr] w-full sm:items-center items-start p-5 border-r-1 border-r-[var(--border)] border-b-1 border-b-[var(--border)]'>
+                            <div className='flex flex-col lg:grid grid-cols-[auto_1fr] w-full sm:items-center items-start p-5 border-r-1 border-r-[var(--border)] border-b-1 border-b-[var(--border)] '>
 
-                                <div className="relative  flex justify-center items-center ">
-                                    <img src={item.image} alt={item.productTitle} className="w-[200px] h-[200px] object-cover" />
+                             <div className="relative w-full flex justify-center items-center ">
+                                    <img src={item.image} alt={item.productTitle} className="w-[150px] h-[150px] sm:w-[177px] sm:h-[177px] object-contain " />
                                     <div className='absolute top-0 left-0 flex justify-between items-center w-full'>
                                         <span className='rounded-3xl bg-[var(--accent)] px-2 py-1 text-[10px] font-extrabold text-white'>{item.discountPercentage}</span>
                                         <LikeHeart></LikeHeart>
@@ -46,9 +46,9 @@ const DealsOfDaySection = () => {
                                         </svg>
                                         <span className=''>3</span>
                                     </span>
-                                    <strong className="text-[22px] font-bold text-[var(--accent)]"> {item.ourPrice}.<span className='text-base font-medium text-[var(--text-primary)] line-through'>{item.ourPrice}</span></strong>
+                                    <strong className="text-[22px] font-bold text-[var(--accent)] flex items-center gap-x-2"> {item.ourPrice}<span className='text-base font-medium text-[var(--text-primary)] line-through'>{item.ourPrice}</span></strong>
 
-                                    <button type='button' className=' border-1 border-[var(--primary)] rounded-3xl px-5 py-1 text-[var(--primary)] flex gap-3 items-center justify-between'>Add to cart <img src="/plus-icon.svg" alt="" /></button>
+                                       <button type='button' className='text-sm  border-1 border-[var(--primary)] rounded-3xl px-3  md:px-5 py-1 text-[var(--primary)] flex gap-x-1 md:gap-3 items-center justify-between'>Add to cart <img src="/plus-icon.svg" alt="" /></button>
                                 </div>
                             </div>
                         )}
@@ -56,13 +56,12 @@ const DealsOfDaySection = () => {
                     </div>
 
 
-                    <div className=' !border-4 !border-[var(--accent)] rounded-xl flex flex-col md:grid grid-cols-[auto_1fr] p-5 border-r-1 border-r-[var(--border)] col-start-2 row-start-1 row-span-2 border-b-1 border-b-[var(--border)] justify-center items-center gap-5'>
+                    <div className='!border-4 !border-[var(--accent)] rounded-xl flex flex-col md:grid grid-cols-[auto_1fr] p-5 border-r-1 border-r-[var(--border)] col-start-2 row-start-1 row-span-2 border-b-1 border-b-[var(--border)] justify-center items-center gap-5'>
                         {
                             data.slice(1, 2).map((product) => (
                                 <>
-                                    <div>
 
-                                        <div className="relative w-full h-full  flex items-center justify-center">
+                                        <div className="relative w-full h-full flex items-center justify-center">
                                             <Image src="/deals-large-product.png" alt="deals large product" width={400} height={400} className="w-[200px] h-[200px] lg:w-[400px] lg:h-[400px] 2xl:w-[400px] 2xl:h-[400px] object-cover " />
                                             <div className='absolute top-0 left-0 flex justify-between items-center w-full'>
                                                 <span className='rounded-3xl bg-[var(--accent)] px-2 py-1 text-[10px] font-extrabold text-white'>32423</span>
@@ -86,7 +85,7 @@ const DealsOfDaySection = () => {
                                                 Great Value Rising Crust Frozen Pizza, Supreme
                                             </p>
 
-                                            <strong className="text-[22px] font-bold text-[var(--accent)]">434<span className='text-base font-medium text-[var(--text-primary)] line-through'>4454</span></strong>
+                                                <strong className="text-[22px] font-bold text-[var(--accent)]">$43.00<span className='text-base font-medium text-[var(--text-primary)] line-through'>$23.00</span></strong>
                                             <p>Vivamus adipiscing nisl ut dolor dignissim semper. Nulla
                                                 luctus malesuada tincidunt. Class aptent taciti sociosqu
                                                 ad litora torquent Vivamus adipiscing nisl ut dolor
@@ -104,7 +103,6 @@ const DealsOfDaySection = () => {
                                             </button>
                                             {/* <button type='button' className=' border-1 border-[var(--primary)] rounded-3xl px-5 py-1 text-[var(--primary)] flex gap-3 items-center justify-between'>Add to cart <img src="/plus-icon.svg" alt="" /></button> */}
                                         </div>
-                                    </div>
 
                                 </>
                             ))

@@ -88,9 +88,9 @@ const BestSellerProductSection = () => {
 
 
                     {/* <div> */}
-                    <div className='grid grid-cols-2 2xl:grid-cols-1 gap-x-2 sm:gap-x-5'>
-                        <Image src="/banner-06.jpg.png" alt='best seller banner image' width={400} height={600} className='rounded-lg w-[100%] h-auto object-cover object-top ' />
-                        <Image src="/banner-06.jpg.png" alt='best seller banner image' width={400} height={600} className='rounded-lg w-[100%] h-auto object-cover object-top ' />
+                    <div className='grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-1 gap-y-2 gap-x-2 sm:gap-x-5'>
+                        <Image src="/banner-06.jpg.png" alt='best seller banner image' width={400} height={600} className='rounded-lg  w-[100%] h-[400px] 2xl:h-auto object-cover object-bottom ' />
+                        <Image src="/banner-06.jpg.png" alt='best seller banner image' width={400} height={600} className='rounded-lg w-[100%] h-[400px] 2xl:h-auto object-cover object-bottom ' />
                     </div>
                     {/* </div> */}
 

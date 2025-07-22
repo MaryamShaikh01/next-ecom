@@ -2,6 +2,8 @@ import React from 'react'
 import LikeHeart from '../svg/LikeHeart'
 import data from '../data.json'
 import Image from 'next/image'
+import Link from 'next/link'
+import { Heart } from 'lucide-react'
 
 
 const BestSellerProductSection = () => {
@@ -40,7 +42,7 @@ const BestSellerProductSection = () => {
                                     <img src={item.image} alt={item.productTitle} className="w-[150px] h-[150px] sm:w-[177px] sm:h-[177px] object-contain " />
                                     <div className='absolute top-0 left-0 flex justify-between items-center w-full'>
                                         <span className='rounded-3xl bg-[var(--accent)] px-2 py-1 text-[10px] font-extrabold text-white'>{item.discountPercentage}</span>
-                                        <LikeHeart></LikeHeart>
+                                         <Heart strokeWidth={1.5} className='hover:fill-red-600' stroke='#b91c1c' />
                                     </div>
                                 </div>
 
@@ -77,7 +79,7 @@ const BestSellerProductSection = () => {
                                     </span>
                                     <strong className="text-lg md:text-[22px] font-bold text-[var(--accent)] whitespace-nowrap"> {item.ourPrice} <span className='text-sm md:text-base font-medium text-[var(--text-primary)] line-through'>{item.originalPrice}</span></strong>
 
-                                    <button type='button' className='text-sm  border-1 border-[var(--primary)] rounded-3xl px-3  md:px-5 py-1 text-[var(--primary)] flex gap-x-1 md:gap-3 items-center justify-between'>Add to cart <img src="/plus-icon.svg" alt="" /></button>
+                                          <Link href="/cart" className='text-sm  border-1 border-[var(--primary)] rounded-3xl px-3 hover:bg-violet-50 md:px-5 py-1 text-[var(--primary)] flex gap-x-1 md:gap-3 items-center justify-between'>Add to cart <img src="/plus-icon.svg" alt="" /></Link>
                                 </div>
 
 
@@ -89,8 +91,8 @@ const BestSellerProductSection = () => {
 
                     {/* <div> */}
                     <div className='grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-1 gap-y-2 gap-x-2 sm:gap-x-5'>
-                        <Image src="/banner-06.jpg.png" alt='best seller banner image' width={400} height={600} className='rounded-lg  w-[100%] h-[400px] 2xl:h-auto object-cover object-bottom ' />
-                        <Image src="/banner-06.jpg.png" alt='best seller banner image' width={400} height={600} className='rounded-lg w-[100%] h-[400px] 2xl:h-auto object-cover object-bottom ' />
+                        <Image src="/banner-06.jpg.png" alt='best seller banner image' width={400} height={600} className='rounded-lg  w-[100%] h-[390px] object-cover object-bottom ' />
+                        <Image src="/banner-06.jpg.png" alt='best seller banner image' width={400} height={600} className='rounded-lg w-[100%] h-[390px]  object-cover object-bottom ' />
                     </div>
                     {/* </div> */}
 
@@ -105,7 +107,7 @@ const BestSellerProductSection = () => {
                                     <img src={item.image} alt={item.productTitle} className="w-[150px] h-[150px] sm:w-[177px] sm:h-[177px] object-contain " />
                                     <div className='absolute top-0 left-0 flex justify-between items-center w-full'>
                                         <span className='rounded-3xl bg-[var(--accent)] px-2 py-1 text-[10px] font-extrabold text-white'>{item.discountPercentage}</span>
-                                        <LikeHeart></LikeHeart>
+                                    <Heart strokeWidth={1.5} className='hover:fill-red-600' stroke='#b91c1c' />
                                     </div>
                                 </div>
 

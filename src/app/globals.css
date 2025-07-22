@@ -50,9 +50,14 @@
 }
 
 .swiper.thumbSwiper {
-  width: 100%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.singleProductSwiper2 .swiper-button-prev:after, .swiper-button-next:after{
+  font-size: 30px !important;
+  color: var(--primary);
 }
 
 @media screen and (max-width: 500px) {
@@ -128,7 +133,7 @@
 
 .mySwiper.thumbSwiper .swiper-slide-thumb-active {
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid var(--primary);
   border-radius: 10px;
   padding: 5px;
 }
@@ -200,6 +205,7 @@
 .heroBanner .swiper-pagination-bullet-active {
   background-color: var(--primary);
 }
+
 /* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -222,3 +228,4 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+

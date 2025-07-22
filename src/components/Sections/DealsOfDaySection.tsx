@@ -3,6 +3,8 @@ import LikeHeart from '../svg/LikeHeart'
 import data from '../data.json'
 import CartBasket from '../svg/CartBasket'
 import Image from 'next/image'
+import Link from 'next/link'
+import { Heart } from 'lucide-react'
 
 
 const DealsOfDaySection = () => {
@@ -23,7 +25,7 @@ const DealsOfDaySection = () => {
                                     <img src={item.image} alt={item.productTitle} className="w-[150px] h-[150px] sm:w-[177px] sm:h-[177px] object-contain " />
                                     <div className='absolute top-0 left-0 flex justify-between items-center w-full'>
                                         <span className='rounded-3xl bg-[var(--accent)] px-2 py-1 text-[10px] font-extrabold text-white'>{item.discountPercentage}</span>
-                                        <LikeHeart></LikeHeart>
+                                        <Heart strokeWidth={1.5} className='hover:fill-red-600' stroke='#b91c1c' />
                                     </div>
                                     <p className='absolute left-0 bottom-0 bg-gradient-to-r from-lime-300 to-green-300 text-[10px] font-extrabold w-fit rounded-[14px] px-2.5 py-1 text-[var(--badgeGreenText)]'>{item.badgeText}</p>
 
@@ -48,7 +50,7 @@ const DealsOfDaySection = () => {
                                     </span>
                                     <strong className="text-[22px] font-bold text-[var(--accent)] flex items-center gap-x-2"> {item.ourPrice}<span className='text-base font-medium text-[var(--text-primary)] line-through'>{item.ourPrice}</span></strong>
 
-                                       <button type='button' className='text-sm  border-1 border-[var(--primary)] rounded-3xl px-3  md:px-5 py-1 text-[var(--primary)] flex gap-x-1 md:gap-3 items-center justify-between'>Add to cart <img src="/plus-icon.svg" alt="" /></button>
+                                             <Link href="/cart" className='text-sm  border-1 border-[var(--primary)] rounded-3xl px-3 hover:bg-violet-50 md:px-5 py-1 text-[var(--primary)] flex gap-x-1 md:gap-3 items-center justify-between'>Add to cart <img src="/plus-icon.svg" alt="" /></Link>
                                 </div>
                             </div>
                         )}
@@ -65,7 +67,7 @@ const DealsOfDaySection = () => {
                                             <Image src="/deals-large-product.png" alt="deals large product" width={400} height={400} className="w-[200px] h-[200px] lg:w-[400px] lg:h-[400px] 2xl:w-[400px] 2xl:h-[400px] object-cover " />
                                             <div className='absolute top-0 left-0 flex justify-between items-center w-full'>
                                                 <span className='rounded-3xl bg-[var(--accent)] px-2 py-1 text-[10px] font-extrabold text-white'>32423</span>
-                                                <LikeHeart></LikeHeart>
+                                             <Heart strokeWidth={1.5} className='hover:fill-red-600' stroke='#b91c1c' />
                                             </div>
                                             <p className='uppercase absolute left-0 bottom-0 bg-gradient-to-r from-lime-300  to-green-300 text-[10px] font-extrabold w-fit rounded-[14px] px-2.5 py-1 text-[var(--badgeGreenText)]'>Cold Sale</p>
                                         </div>

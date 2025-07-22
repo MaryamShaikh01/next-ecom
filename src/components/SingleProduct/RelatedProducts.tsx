@@ -4,6 +4,7 @@
 import React from 'react'
 import data from '../data.json'
 import LikeHeart from '../svg/LikeHeart';
+import Link from 'next/link';
 
 const RelatedProducts = () => {
   return (
@@ -39,7 +40,7 @@ const RelatedProducts = () => {
               </span>
               <strong className="text-[22px] font-bold text-[var(--accent)]"> {item.ourPrice} <span className='text-base font-medium text-[var(--text-primary)] line-through'>{item.originalPrice}</span></strong>
 
-              <button type='button' className=' border-1 border-[var(--primary)] rounded-3xl px-5 py-1 text-[var(--primary)] flex gap-3 items-center justify-between'>Add to cart <img src="/plus-icon.svg" alt="" /></button>
+                <Link href="/cart" className='text-sm  border-1 border-[var(--primary)] rounded-3xl px-3 hover:bg-violet-50 md:px-5 py-1 text-[var(--primary)] flex gap-x-1 md:gap-3 items-center justify-between'>Add to cart <img src="/plus-icon.svg" alt="" /></Link>
             </div>
 
 

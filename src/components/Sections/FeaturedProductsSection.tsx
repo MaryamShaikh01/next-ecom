@@ -3,6 +3,8 @@ import Star from '../svg/Star'
 import LikeHeart from '../svg/LikeHeart'
 import data from '../data.json'
 import Image from 'next/image'
+import { Heart } from 'lucide-react'
+import Link from 'next/link'
 
 
 const FeaturedProductsSection = () => {
@@ -10,7 +12,7 @@ const FeaturedProductsSection = () => {
         <>
             <div className='px-2.5 m-auto sm:w-[80vw]'>
 
-            
+
                 <div className='mb-[40px] border-1 border-[var(--border)]  rounded-[12px] grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(200px,1fr))]'>
 
                     {
@@ -21,7 +23,7 @@ const FeaturedProductsSection = () => {
                                     <img src={product.image} alt={product.productTitle} width={177} height={177} className="w-[200px] h-[150px] md:w-[200px] md:h-[200px] object-contain" />
                                     <div className='absolute top-0 left-0 flex justify-between items-center w-full'>
                                         <span className='rounded-3xl bg-[var(--accent)] px-2 py-1 text-[10px] font-extrabold text-white'>{product.discountPercentage}</span>
-                                        <LikeHeart></LikeHeart>
+                                        <Heart strokeWidth={1.5} className='hover:fill-red-600' stroke='#b91c1c' />
                                     </div>
                                 </div>
 
@@ -50,9 +52,9 @@ const FeaturedProductsSection = () => {
                                         </svg>
                                         <span className=''>3</span>
                                     </span>
-                                  <strong className="text-lg md:text-[22px] font-bold text-[var(--accent)] whitespace-nowrap"> {product.ourPrice} <span className='text-sm md:text-base font-medium text-[var(--text-primary)] line-through'>{product.originalPrice}</span></strong>
+                                    <strong className="text-lg md:text-[22px] font-bold text-[var(--accent)] whitespace-nowrap"> {product.ourPrice} <span className='text-sm md:text-base font-medium text-[var(--text-primary)] line-through'>{product.originalPrice}</span></strong>
 
-              <button type='button' className='text-sm  border-1 border-[var(--primary)] rounded-3xl px-3  md:px-5 py-1 text-[var(--primary)] flex gap-x-1 md:gap-3 items-center justify-between'>Add to cart <img src="/plus-icon.svg" alt="" /></button>
+                                    <Link href="/cart" className='text-sm  border-1 border-[var(--primary)] rounded-3xl px-3 hover:bg-violet-50 md:px-5 py-1 text-[var(--primary)] flex gap-x-1 md:gap-3 items-center justify-between'>Add to cart <img src="/plus-icon.svg" alt="" /></Link>
                                 </div>
 
 

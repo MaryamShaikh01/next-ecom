@@ -1,9 +1,13 @@
+'use client'
+
 import Basket from '@/components/svg/Basket'
 import Heart from '@/components/svg/WishListHeart'
 import MapSvg from '@/components/svg/Map'
 import UserIcon from '@/components/svg/UserIcon'
-import React from 'react'
+import React, { useState } from 'react'
 import Navigation from '../ShadCN/Navigation'
+import { useRouter } from 'next/navigation'
+
 import {
     Select,
     SelectContent,
@@ -14,9 +18,34 @@ import {
     SelectValue,
 } from "@/components/ui/select"
 import Link from 'next/link'
+import { UserRound } from 'lucide-react'
 
 
 const HeaderBottom = () => {
+
+    const [searchQuery, setSearchQuery] = useState()
+    const router = useRouter()
+
+
+    const inputValueChange = (event: any) => {
+        console.log(event.target.value)
+        const inputValue = event.target.value
+        setSearchQuery(inputValue)
+       
+    }
+
+    const enterClicked = (event: any) => {
+        if (event.key == "Enter") {
+            let inputValue = event.target.value.trim()
+
+            if (inputValue.trim() !== "") {
+                router.push(`/products?search=${inputValue}`)
+                event.target.value = ""
+            }
+
+        }
+    }
+
     return (
         <div className='border-b-1 border-b-[var(--border)]'>
             <div className='px-[10px] m-auto sm:w-[80vw] flex gap-x-5 items-center flex-wrap md:flex-nowrap justify-between py-4'>
@@ -37,11 +66,14 @@ const HeaderBottom = () => {
                 </div>
 
                 <input type="search" name="search" id="search-cloth" placeholder="Search for products, categories or brands..."
-                    className="hidden lg:block bg-[var(--secondary)] w-[55%] pl-10  py-2.5 bg-[url('/search.svg')] bg-no-repeat bg-position-[10px]  rounded-[8px]" />
+                    className="hidden  lg:block bg-[var(--secondary)] w-[55%] pl-10 pr-3 py-2.5 focus:outline-1 focus:outline-[var(--primary)] bg-[url('/search.svg')] bg-no-repeat bg-position-[10px] text-sm  rounded-[8px]" onChange={inputValueChange} value={searchQuery} onKeyDown={enterClicked} />
 
                 <div className='flex items-center gap-x-5'>
-                    <UserIcon></UserIcon>
+                    <Link href="/signin" className='flex  gap-x-2'>
+
+                    <UserRound />
                     <p className='flex flex-col leading-3 text-[11px] text-[#4f5159]'>Sign In<span className='text-[13px] text-[var(--text-primary)] font-medium'>Account</span></p>
+                    </Link>
                     <Heart></Heart>
                     <Basket></Basket>
                 </div>
@@ -49,7 +81,7 @@ const HeaderBottom = () => {
             </div>
             <div className='px-[10px] m-auto sm:w-[80vw] block lg:hidden pb-4'>
                 <input type="search" name="search" id="search-cloth" placeholder="Search for products, categories or brands..."
-                    className="bg-[var(--secondary)]  w-full m-auto pl-10  py-2.5 bg-[url('/search.svg')] bg-no-repeat bg-position-[10px]  rounded-[8px]" />
+                    className="bg-[var(--secondary)] text-sm w-full m-auto pl-10 pr-3  py-2.5 bg-[url('/search.svg')] bg-no-repeat bg-position-[10px]  rounded-[8px]" onChange={inputValueChange} value={searchQuery} onKeyDown={enterClicked}/>
             </div>
 
 

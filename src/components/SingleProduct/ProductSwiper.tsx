@@ -33,41 +33,41 @@ export default function ProductSwiper() {
         className="swiper mySwiper2 singleProductSwiper2"
       >
         <SwiperSlide>
-          <img src="/banana-bunch.png" width={500} height={300} />
+          <img src="/swiper-banana.png" width={660} height={660}  />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="banana-1.png" />
+          <img src="swiper-banana.png" />
         </SwiperSlide>
         <SwiperSlide>
-                  <img src="banana-2.png" />
+                  <img src="swiper-banana.png" />
 
         </SwiperSlide>
         <SwiperSlide>
-               <img src="banana-3.png" />
+               <img src="swiper-banana.png" />
 
         </SwiperSlide>
         <SwiperSlide>
-                   <img src="banana-1.png" />
+                   <img src="swiper-banana.png" />
 
         </SwiperSlide>
         <SwiperSlide>
-                    <img src="banana-bunch.png" />
+                    <img src="swiper-banana.png" />
 
         </SwiperSlide>
         <SwiperSlide>
-                 <img src="banana-1.png" />
+                 <img src="swiper-banana.png" />
 
         </SwiperSlide>
         <SwiperSlide>
-             <img src="banana-2.png" />
+             <img src="swiper-banana.png" />
 
         </SwiperSlide>
         <SwiperSlide>
-                <img src="banana-3.png" />
+                <img src="swiper-banana.png" />
 
         </SwiperSlide>
         <SwiperSlide>
-                  <img src="banana-bunch.png" />
+                  <img src="swiper-banana.png" />
 
         </SwiperSlide>
       </Swiper>
@@ -82,43 +82,43 @@ export default function ProductSwiper() {
         className="swiper mySwiper thumbSwiper"
       >
         <SwiperSlide>
-          <img src="banana-bunch.png" width={100} height={100}/>
+          <img src="swiper-banana.png" width={100} height={100}/>
 
         </SwiperSlide>
         <SwiperSlide>
-          <img src="banana-1.png" width={100} height={100}/>
+          <img src="swiper-banana.png" width={100} height={100}/>
 
         </SwiperSlide>
         <SwiperSlide>
-                <img src="banana-2.png" width={100} height={100}/>
+                <img src="swiper-banana.png" width={100} height={100}/>
 
         </SwiperSlide>
         <SwiperSlide>
-                  <img src="banana-3.png" width={100} height={100}/>
+                  <img src="swiper-banana.png" width={100} height={100}/>
 
         </SwiperSlide>
         <SwiperSlide>
-              <img src="banana-bunch.png" width={100} height={100} />
+              <img src="swiper-banana.png" width={100} height={100} />
 
         </SwiperSlide>
         <SwiperSlide>
-                  <img src="banana-1.png" width={100} height={100} />
+                  <img src="swiper-banana.png" width={100} height={100} />
 
         </SwiperSlide>
         <SwiperSlide>
-            <img src="banana-2.png" width={100} height={100} />
+            <img src="swiper-banana.png" width={100} height={100} />
 
         </SwiperSlide>
         <SwiperSlide>
-                 <img src="banana-3.png" width={100} height={100}/>
+                 <img src="swiper-banana.png" width={100} height={100}/>
 
         </SwiperSlide>
         <SwiperSlide>
-              <img src="banana-bunch.png" width={100} height={100}/>
+              <img src="swiper-banana.png" width={100} height={100}/>
 
         </SwiperSlide>
         <SwiperSlide>
-                   <img src="banana-1.png" width={100} height={100}/>
+                   <img src="swiper-banana.png" width={100} height={100}/>
 
         </SwiperSlide>
       </Swiper>

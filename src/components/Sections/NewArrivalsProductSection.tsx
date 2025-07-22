@@ -6,6 +6,7 @@ import data from '../data.json'
 import LikeHeart from '../svg/LikeHeart';
 import Image from 'next/image'
 import { Star } from 'lucide-react';
+import Link from 'next/link';
 
 
 
@@ -57,7 +58,7 @@ const NewArrivalsProductSection = () => {
               </span>
               <strong className="text-lg md:text-[22px] font-bold text-[var(--accent)] whitespace-nowrap"> {item.ourPrice} <span className='text-sm md:text-base font-medium text-[var(--text-primary)] line-through'>{item.originalPrice}</span></strong>
 
-              <button type='button' className='text-sm  border-1 border-[var(--primary)] rounded-3xl px-3  md:px-5 py-1 text-[var(--primary)] flex gap-x-1 md:gap-3 items-center justify-between'>Add to cart <img src="/plus-icon.svg" alt="" /></button>
+                     <Link href="/cart" className='text-sm  border-1 border-[var(--primary)] rounded-3xl px-3 hover:bg-violet-50 md:px-5 py-1 text-[var(--primary)] flex gap-x-1 md:gap-3 items-center justify-between'>Add to cart <img src="/plus-icon.svg" alt="" /></Link>
             </div>
 
 

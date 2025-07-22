@@ -63,7 +63,7 @@ const ProductDetails = () => {
                     </div>
 
                     <div className='flex gap-x-3 gap-y-3 flex-wrap'>
-                        <button type='button' className='border-1 border-[var(--gray-border)] font-medium rounded-md flex items-center  '><FaMinus className=' mx-5 text-xs '/> <span className=' text-sm'>1</span> <FaPlus className='mx-5 text-xs'/></button>
+                        <button type='button' className='border-1 border-[var(--gray-border)] py-3 font-medium rounded-md flex items-center  '><FaMinus className=' mx-5 text-xs '/> <span className=' text-sm'>1</span> <FaPlus className='mx-5 text-xs'/></button>
                         
                         <button type='button' className='cursor-pointer bg-[var(--btn-green-bg)] text-white px-10 py-3 rounded-lg text-sm font-bold flex items-center gap-x-3'> <Image src="/basket-icon.svg" alt='basket icon' width={30} height={30} className='w-5 h-5' />Add to cart</button>
 

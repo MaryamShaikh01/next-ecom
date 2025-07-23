@@ -41,7 +41,7 @@ const AllFilteredProducts = (props: any) => {
                                             <Image src={item.image} alt={item.productTitle} width={1000} height={1000} className="w-[150px] h-[150px] sm:w-[177px] sm:h-[177px] object-contain " />
                                             <div className='absolute top-0 left-0 flex justify-between items-center w-full'>
                                                 <span className='rounded-3xl bg-[var(--accent)] px-2 py-1 text-[10px] font-extrabold text-white'>{item.discountPercentage}</span>
-                                                <Heart strokeWidth={1.5} stroke='#b91c1c' className='hover:fill-red-600'/>
+                                                <Heart strokeWidth={1.5} stroke='#b91c1c' className='hover:fill-red-600' />
                                             </div>
                                         </div>
 
@@ -49,8 +49,8 @@ const AllFilteredProducts = (props: any) => {
 
                                             {
                                                 item.badgeText ? (
-                                                    <p className={`${item.badgeText == "ORGANIC" ? "bg-gradient-to-r from-lime-300  to-green-300 text-[var(--badgeGreenText)]" : "bg-gradient-to-r from-cyan-200 to-cyan-50 text-[#0891B2]"} text-[10px] font-extrabold w-fit rounded-[14px] px-2.5 py-1  flex items-center gap-x-1`}>
-                                                        <Image src={item.badgeImage} alt="badge icon" width={10} height={10} className='' />
+                                                    <p className={`${item.badgeText == "ORGANIC" ? "bg-gradient-to-r from-lime-300  to-green-300 text-[var(--badgeGreenText)]" : "bg-gradient-to-r from-cyan-200 to-cyan-50 text-[#0891B2]"}  w-fit rounded-[14px] px-2.5 py-1  flex items-center gap-x-1 text-[11px] font-extrabold`}>
+                                                        <Image src={item.badgeImage} alt="badge icon" width={10} height={10} className='w-3.5 h-3.5' />
                                                         {item.badgeText}
                                                     </p>
                                                 ) : <span className='h-6'></span>
@@ -73,7 +73,7 @@ const AllFilteredProducts = (props: any) => {
                                             </span>
                                             <strong className="text-lg md:text-[22px] font-bold text-[var(--accent)] whitespace-nowrap"> {item.ourPrice} <span className='text-sm md:text-base font-medium text-[var(--text-primary)] line-through'>{item.originalPrice}</span></strong>
 
-                                                   <Link href="/cart" className='text-sm  border-1 border-[var(--primary)] rounded-3xl px-3 hover:bg-violet-50 md:px-5 py-1 text-[var(--primary)] flex gap-x-1 md:gap-3 items-center justify-between'>Add to cart <img src="/plus-icon.svg" alt="" /></Link>
+                                            <Link href="/cart" className='text-sm  border-1 border-[var(--primary)] rounded-3xl px-3 hover:bg-violet-50 md:px-5 py-1 text-[var(--primary)] flex gap-x-1 md:gap-3 items-center justify-between'>Add to cart <img src="/plus-icon.svg" alt="add icon" /></Link>
                                         </div>
 
 
@@ -99,18 +99,21 @@ const AllFilteredProducts = (props: any) => {
                                                     <Image src={item.image} alt={item.productTitle} width={100} height={100} className="min-w-[150px] min-h-[150px] sm:w-[177px] sm:h-[177px] object-contain " />
                                                     <div className='absolute top-0 left-0 flex justify-between items-center w-full'>
                                                         <span className='rounded-3xl bg-[var(--accent)] px-2 py-1 text-[10px] font-extrabold text-white'>{item.discountPercentage}</span>
-                                                       <Heart strokeWidth={1.5} className='hover:fill-red-600' stroke='#b91c1c' />
+                                                        <Heart strokeWidth={1.5} className='hover:fill-red-600' stroke='#b91c1c' />
                                                     </div>
                                                 </div>
 
                                                 <div className=" flex flex-col justify-center gap-y-1">
-                                                    
+
                                                     {
                                                         item.badgeText ? (
-                                                            <p className={`${item.badgeText == "ORGANIC" ? "bg-gradient-to-r from-lime-300  to-green-300 text-[var(--badgeGreenText)]" : "bg-gradient-to-r from-cyan-200 to-cyan-50 text-[#0891B2]"} h-fit text-[11px] font-extrabold w-fit rounded-[14px] px-2.5 py-1  flex items-center gap-x-1`}>
-                                                                <Image src={item.badgeImage} alt="badge icon" width={10} height={10} className='' />
+                                                            <p className={`${item.badgeText == "ORGANIC" ? "bg-gradient-to-r from-lime-300  to-green-300 text-[var(--badgeGreenText)]" : "bg-gradient-to-r from-cyan-200 to-cyan-50 text-[#0891B2]"} text-[11px]  font-extrabold w-fit rounded-[14px] px-2.5 py-1  flex items-center gap-x-1`}>
+                                                                <Image src={item.badgeImage} alt="badge icon" width={10} height={10} className='w-3.5 h-3.5' />
                                                                 {item.badgeText}
                                                             </p>
+
+
+
                                                         ) : <span className='h-6'></span>
                                                     }
 
@@ -130,7 +133,7 @@ const AllFilteredProducts = (props: any) => {
                                                     </span>
                                                     <strong className="text-lg md:text-[22px] font-bold text-[var(--accent)] whitespace-nowrap"> {item.ourPrice} <span className='text-sm md:text-base font-medium text-[var(--text-primary)] line-through'>{item.originalPrice}</span></strong>
 
-                                                    <button type='button' className='text-sm  border-1 border-[var(--primary)] rounded-3xl px-3  md:px-5 py-1 text-[var(--primary)] flex gap-x-1 md:gap-3 items-center justify-between'>Add to cart <img src="/plus-icon.svg" alt="" /></button>
+                                                    <Link href="/cart" className='text-sm  border-1 border-[var(--primary)] rounded-3xl px-3 hover:bg-violet-50 md:px-5 py-1 text-[var(--primary)] flex gap-x-1 md:gap-3 items-center justify-between'>Add to cart <img src="/plus-icon.svg" alt="add icon" /></Link>
                                                 </div>
 
 

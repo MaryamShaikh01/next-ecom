@@ -8,8 +8,10 @@ const YourOrder = () => {
 
                 <p className='text-[var(--text-secondary)] text-sm font-medium flex justify-between py-2 border-b-1 border-[var(--border)]'>Product <span className='text-sm'>Subtotal</span></p>
 
-                <p className='text-sm font-medium flex justify-between flex-wrap py-2 border-b-1 border-[var(--border)] '>Marketside Fresh Organic
-                    Bananas, Bunch <span className='font-semibold'>x 1</span> <span className='ml-auto'>$0.87</span></p>
+                <p className='text-sm font-medium flex justify-between gap-x-2 flex-wrap py-2 border-b-1 border-[var(--border)] '><span className=''>Marketside Fresh Organic
+                    Bananas, Bunch</span> <span className='font-semibold'>x 1</span> <span className='ml-auto'>$0.87</span></p>
+
+                    <p className='text-sm font-medium grid grid-cols-[2fr_1fr]'>Marketside Fresh Organic Bananas, Bunch</p>
 
                 <p className='text-[var(--text-secondary)] text-sm font-medium flex justify-between  py-2 border-b-1 border-[var(--border)] '>Subtotal <span className='text-black'>$0.87</span></p>
 

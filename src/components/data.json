@@ -1,3 +1,5 @@
+
+
 [
   {
     "id": "1",
@@ -7,7 +9,8 @@
     "discountPercentage": "33%",
     "image": "/apple-juice.png" , 
     "badgeText": "ORGANIC",
-    "badgeImage" : "/leaf-icon.svg"
+    "badgeImage" : "/leaf-icon.svg",
+    "category" : "Beverages"
   },
   {
     "id": "2",
@@ -17,7 +20,8 @@
     "discountPercentage": "25%",
     "image": "/pizza.png",
     "badgeText": "COLD SALE",
-    "badgeImage" : "/snowflake-blue.svg"
+    "badgeImage" : "/snowflake-blue.svg",
+    "category" : "Frozen Foods"
   },
   {
     "id": "3",
@@ -27,7 +31,9 @@
     "discountPercentage": "22%",
     "image": "/orange-juice.png",
      "badgeText": "ORGANIC",
-    "badgeImage" : "leaf-icon.svg"
+    "badgeImage" : "leaf-icon.svg",
+    "category" : "Beverages"
+
   },
   {
     "id": "4",
@@ -37,7 +43,9 @@
     "discountPercentage": "23%",
     "image": "/pizza.png",
        "badgeText": "COLD SALE",
-    "badgeImage" : "snowflake-blue.svg"
+    "badgeImage" : "snowflake-blue.svg",
+    "category" : "Frozen Foods"
+
   },
   {
     "id": "5",
@@ -47,10 +55,12 @@
     "discountPercentage": "30%",
     "image": "/cantaloupe.png",
      "badgeText": "ORGANIC",
-    "badgeImage" : "leaf-icon.svg"
+    "badgeImage" : "leaf-icon.svg",
+    "category" : "Fruits & Vegetables"
     
 
   },
+
   {
     "id": "6",
     "productTitle": "Angel Soft Toilet Paper, 9 Mega Rolls",
@@ -59,7 +69,8 @@
     "discountPercentage": "25%",
     "image": "/toilet-paper.png",
     "badgeText" : "",
-    "badgeImage" : ""
+    "badgeImage" : "",
+    "category" : "Houshold Needs"
    },
   {
     "id": "7",
@@ -69,8 +80,10 @@
     "discountPercentage": "27%",
      "badgeText": "ORGANIC",
     "badgeImage" : "leaf-icon.svg",
-    "image": "/banana-bunch.png"
+    "image": "/banana-bunch.png",
+    "category" : "Fruits & Vegetables"
   },
+
   {
     "id": "8",
     "productTitle": "Lay’s Classic Potato Snack Chips, Party Size, 13 oz Bag",
@@ -79,7 +92,8 @@
     "discountPercentage": "25%",
        "badgeText": "",
     "badgeImage" : "",
-    "image": "/lays.png"
+    "image": "/lays.png",
+    "category" : "Biscuits & Snacks"
   },
   {
     "id": "9",
@@ -89,8 +103,9 @@
     "discountPercentage": "33%",
       "badgeText": "COLD SALE",
     "badgeImage" : "snowflake-blue.svg",
-    "image": "/peperoni-pizza.png"
-    
+    "image": "/peperoni-pizza.png",
+    "category" :"Frozen Foods"
+     
   },
   {
     "id": "10",
@@ -100,8 +115,8 @@
     "discountPercentage": "25%",
     "badgeText": "",
     "badgeImage" : "",
-
-    "image": "/packed-meat.png"
+    "image": "/packed-meat.png",
+    "category" : "Meats & Seafoods"
   },
   {
     "id": "11",
@@ -111,7 +126,8 @@
     "discountPercentage": "30%",
       "badgeText": "",
     "badgeImage" : "",
-    "image": "/flavoured-mouthwash.png"
+    "image": "/flavoured-mouthwash.png",
+    "category" : "Houshold Needs"
   },
   {
     "id": "12",
@@ -121,8 +137,11 @@
     "discountPercentage": "22%",
      "badgeText": "",
     "badgeImage" : "",
-    "image": "/flamed-chicken-breast.png"
+    "image": "/flamed-chicken-breast.png",
+    "category" : "Meats & Seafoods"
   },
+
+
   {
     "id": "13",
     "productTitle": "Philadelphia Original Cream Cheese Spread – 12oz",
@@ -131,7 +150,8 @@
     "discountPercentage": "25%",
      "badgeText": "",
     "badgeImage" : "",
-    "image": "/cream-cheese.png"
+    "image": "/cream-cheese.png",
+    "category" :"Grocery & Staples"
   },
   {
     "id": "14",
@@ -141,7 +161,8 @@
     "discountPercentage": "23%",
   "badgeText": "",
     "badgeImage" : "",
-    "image": "/pearl-syrup.png"
+    "image": "/pearl-syrup.png",
+    "category" : "Beverages"
   },
   {
     "id": "15",
@@ -151,8 +172,10 @@
     "discountPercentage": "25%",
    "badgeText": "",
     "badgeImage" : "",
-    "image": "/protein-shake.png"
+    "image": "/protein-shake.png",
+    "category" : "Beverages"
   },
+
   {
     "id": "16",
     "productTitle": "Thomas’ Everything Bagels – 20oz_6ct",
@@ -161,7 +184,8 @@
     "discountPercentage": "26%",
   "badgeText": "",
     "badgeImage" : "",
-    "image": "/packed-bread.png"
+    "image": "/packed-bread.png",
+    "category" : "Grocery & Staples"
   },
   {
     "id": "17",
@@ -171,7 +195,8 @@
     "discountPercentage": "29%",
      "badgeText": "",
     "badgeImage" : "",
-    "image": "/baguettes.png"
+    "image": "/baguettes.png",
+    "category" : "Grocery & Staples"
   },
   {
     "id": "18",
@@ -180,7 +205,8 @@
     "ourPrice": "$32.99",
     "discountPercentage": "27%",
    
-    "image": "/sliced-strawberries.png"
+    "image": "/sliced-strawberries.png",
+    "category"  :"Fruits & Vegetables"
   },
   {
     "id": "19",
@@ -190,7 +216,8 @@
     "discountPercentage": "25%",
   "badgeText": "",
     "badgeImage" : "",
-    "image": "/hand-tossed-pizza.png"
+    "image": "/hand-tossed-pizza.png",
+    "category" : "Frozen Foods"
   },
   {
     "id": "20",
@@ -200,6 +227,7 @@
     "discountPercentage": "25%",
    "badgeText": "",
     "badgeImage" : "",
-    "image": "/scramble-kit.png"
+    "image": "/scramble-kit.png",
+    "category" : "Meats & Seafoods"
   }
 ]

@@ -7,6 +7,7 @@ import { FiShare } from "react-icons/fi";
 import ProductSwiper from '@/components/SingleProduct/ProductSwiper'
 import { FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa6";
+import Link from 'next/link';
 
 
 const ProductDetails = () => {
@@ -67,7 +68,7 @@ const ProductDetails = () => {
                         
                         <button type='button' className='cursor-pointer bg-[var(--btn-green-bg)] text-white px-10 py-3 rounded-lg text-sm font-bold flex items-center gap-x-3'> <Image src="/basket-icon.svg" alt='basket icon' width={30} height={30} className='w-5 h-5' />Add to cart</button>
 
-                        <button type='button' className='cursor-pointer bg-black text-white px-10 py-3 rounded-lg text-sm font-bold flex items-center gap-x-3 '> <Image src="/basket-icon.svg" alt='basket icon' width={10} height={10} className='w-5 h-5' />Buy Now</button>
+                        <Link href="/cart" className='cursor-pointer bg-black text-white px-10 py-3 rounded-lg text-sm font-bold flex items-center gap-x-3 '> <Image src="/basket-icon.svg" alt='basket icon' width={10} height={10} className='w-5 h-5' />Buy Now</Link>
                     </div>
 
                     <div className='border-1 border-[var(--gray-border)] rounded-md py-3'>

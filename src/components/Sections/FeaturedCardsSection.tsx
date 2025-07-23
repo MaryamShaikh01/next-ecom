@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 
 const FeaturedCardsSection = () => {
@@ -23,6 +24,8 @@ const FeaturedCardsSection = () => {
         <>
             <div className='m-auto px-2.5 sm:w-[80vw] grid sm:grid-cols-2 gap-y-2.5 gap-x-2.5 sm:gap-x-5'>
                 {featuredCardsData.map((data) => (
+                    <Link href="/products">
+
                     <div className=" sm:bg-cover bg-no-repeat px-5 py-10 rounded-[12px] bg-center flex flex-col gap-y-1" style={{ backgroundImage: `url(${data.imageUrl})` }}>
                         <p className='text-[var(--orange)] font-medium text-xs'>{data.badge}</p>
                         <p className='text-[22px] w-[70%] text-[var(--text-primary)] font-bold'>{data.title}</p>
@@ -30,6 +33,7 @@ const FeaturedCardsSection = () => {
                         <button type='button' className='mt-2 border-1 border-var(--border) rounded-full bg-white text-xs font-bold px-[12px] py-[8px] flex gap-2 items-center w-fit'>{data.btnText}<img src="/Icon.svg" alt="" /></button>
 
                     </div>
+                    </Link>
                 ))}
             </div>
         </>

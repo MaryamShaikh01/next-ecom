@@ -4,7 +4,7 @@ import data from '../data.json'
 import CartBasket from '../svg/CartBasket'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Heart } from 'lucide-react'
+import { Heart, ShoppingBag } from 'lucide-react'
 
 
 const DealsOfDaySection = () => {
@@ -87,7 +87,7 @@ const DealsOfDaySection = () => {
                                                 Great Value Rising Crust Frozen Pizza, Supreme
                                             </p>
 
-                                                <strong className="text-[22px] font-bold text-[var(--accent)]">$43.00<span className='text-base font-medium text-[var(--text-primary)] line-through'>$23.00</span></strong>
+                                                <strong className="text-[22px] font-bold text-[var(--accent)] flex gap-x-2 items-center">$43.00<span className='text-base font-medium text-[var(--text-primary)] line-through'>$23.00</span></strong>
                                             <p>Vivamus adipiscing nisl ut dolor dignissim semper. Nulla
                                                 luctus malesuada tincidunt. Class aptent taciti sociosqu
                                                 ad litora torquent Vivamus adipiscing nisl ut dolor
@@ -99,8 +99,8 @@ const DealsOfDaySection = () => {
                                                 <span className='bg-gradient-to-r from-yellow-400 to-red-600 h-1.5'></span>
                                                 <span>available only : <strong>18</strong></span>
                                             </div>
-                                            <button className='bg-[var(--btn-green-bg)] flex  gap-3 items-center p-4 rounded-xl'>
-                                                <CartBasket />
+                                            <button className='bg-[var(--btn-green-bg)] flex  gap-3 items-center p-4 rounded-xl hover:bg-green-800 cursor-pointer'>
+                                                <ShoppingBag className='text-white h-5 w-5' strokeWidth={1.5} />
                                                 <span className='text-white font-bold'>Add to Cart</span>
                                             </button>
                                             {/* <button type='button' className=' border-1 border-[var(--primary)] rounded-3xl px-5 py-1 text-[var(--primary)] flex gap-3 items-center justify-between'>Add to cart <img src="/plus-icon.svg" alt="" /></button> */}

@@ -1,8 +1,26 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { MyContext, useCheckboxValueContext } from '../CheckboxValueContext'
 
-const Filters = () => {
+interface PrefixProp {
+    prefix: string
+}
 
+const Filters = ({ prefix }: PrefixProp) => {
+
+    const { data, setData } = useCheckboxValueContext()
+
+    const handleDataChange = (e: any) => {
+
+        const value = e.target.value
+
+        setData((previousValue) =>
+            e.target.checked ? [...previousValue, value] : previousValue.filter((values) => values !== value)
+        )
+
+        console.log(data , "filtered data ")
+        
+    };
 
     return (
         <>
@@ -12,66 +30,67 @@ const Filters = () => {
                     Product Categories</summary>
                 <ul className="flex flex-col gap-y-2 mt-4">
 
-
-                    <li className="flex items-center ">
+                    <li className="flex items-center">
                         <input
-                            id="fruits-veggies"
+                            id={`${prefix}-fruits-veggies`}
                             type="checkbox"
-                            className="min-w-5 min-h-5 accent-[var(--primary)]"
+                            className="min-w-5 min-h-5 accent-[var(--primary)] "
+                            onChange={handleDataChange}
                             value="Fruits & Vegetables"
                         />
-                        <label htmlFor='fruits-veggies' className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Fruits & Vegetables</label>
+                        <label htmlFor={`${prefix}-fruits-veggies`} className="whitespace-nowrap ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Fruits & Vegetables</label>
                     </li>
 
 
                     <li className="flex items-center ">
-                        <input id="baby-pregnancy" type="checkbox" value="" className="min-w-5 min-h-5 accent-[var(--primary)]" />
-                        <label htmlFor='baby-pregnancy' className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Baby & Pregnancy</label>
+                        <input id={`${prefix}-baby-pregnancy`} type="checkbox" value="Baby & Pregnancy" className="min-w-5 min-h-5 accent-[var(--primary)]" onChange={handleDataChange} />
+                        <label htmlFor={`${prefix}-baby-pregnancy`} className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Baby & Pregnancy</label>
                     </li>
 
                     <li className="flex items-center ">
-                        <input id="beverages" type="checkbox" value="" className="min-w-5 min-h-5 accent-[var(--primary)]" />
-                        <label htmlFor='beverages' className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Beverages</label>
+                        <input id={`${prefix}-beverages`} type="checkbox" value="Beverages" className="min-w-5 min-h-5 accent-[var(--primary)]" onChange={handleDataChange} />
+                        <label htmlFor={`${prefix}-beverages`} className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Beverages</label>
                     </li>
 
                     <li className="flex items-center ">
-                        <input id="meats-seafood" type="checkbox" value="" className="min-w-5 min-h-5 accent-[var(--primary)]" />
-                        <label htmlFor='meats-seafood' className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Meats & Seafoods</label>
+                        <input id={`${prefix}-meats-seafood`} type="checkbox" value="Meats & Seafood" className="min-w-5 min-h-5 accent-[var(--primary)]" onChange={handleDataChange} />
+                        <label htmlFor={`${prefix}-meats-seafood`} className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Meats & Seafoods</label>
                     </li>
 
                     <li className="flex items-center ">
-                        <input id="biscuit-snacks" type="checkbox" value="" className="min-w-5 min-h-5 accent-[var(--primary)]" />
-                        <label htmlFor='biscuit-snacks' className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Biscuits & Snacks</label>
+                        <input id={`${prefix}-biscuit-snacks`} type="checkbox" value="Biscuit & Snacks" className="min-w-5 min-h-5 accent-[var(--primary)]" onChange={handleDataChange} />
+                        <label htmlFor={`${prefix}-biscuit-snacks`} className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Biscuits & Snacks</label>
                     </li>
 
                     <li className="flex items-center ">
-                        <input id="breads-bakery" type="checkbox" value="" className="min-w-5 min-h-5 accent-[var(--primary)]" />
-                        <label htmlFor='breads-bakery' className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Breads & Bakery</label>
+                        <input id={`${prefix}-breads-bakery`} type="checkbox" value="Breads & Bakery" className="min-w-5 min-h-5 accent-[var(--primary)]" onChange={handleDataChange} />
+                        <label htmlFor={`${prefix}-breads-bakery`} className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Breads & Bakery</label>
                     </li>
 
                     <li className="flex items-center ">
-                        <input id="breakfast-dairy" type="checkbox" value="" className="min-w-5 min-h-5 accent-[var(--primary)]" />
-                        <label htmlFor='breakfast-dairy' className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Breaksfast & Dairy</label>
+                        <input id={`${prefix}-breakfast-dairy`} type="checkbox" value="Breakfast & Dairy" className="min-w-5 min-h-5 accent-[var(--primary)]" onChange={handleDataChange} />
+                        <label htmlFor={`${prefix}-breakfast-dairy`} className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Breaksfast & Dairy</label>
                     </li>
 
                     <li className="flex items-center ">
-                        <input id="frozen-food" type="checkbox" value="" className="min-w-5 min-h-5 accent-[var(--primary)]" />
-                        <label htmlFor='frozen-food' className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Frozen Foods</label>
+                        <input id={`${prefix}-frozen-food`} type="checkbox" value="Frozen Food
+" className="min-w-5 min-h-5 accent-[var(--primary)]" onChange={handleDataChange} />
+                        <label htmlFor={`${prefix}-frozen-food`} className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Frozen Foods</label>
                     </li>
 
                     <li className="flex items-center ">
-                        <input id="grocery-staples" type="checkbox" value="" className="min-w-5 min-h-5 accent-[var(--primary)]" />
-                        <label htmlFor='grocery-staples' className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Grocery & Staples</label>
+                        <input id={`${prefix}-grocery-staples`} type="checkbox" value="Grocery & Staples" className="min-w-5 min-h-5 accent-[var(--primary)]" onChange={handleDataChange} />
+                        <label htmlFor={`${prefix}-grocery-staples`} className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Grocery & Staples</label>
                     </li>
 
                     <li className="flex items-center ">
-                        <input id="healthcare" type="checkbox" value="" className="min-w-5 min-h-5 accent-[var(--primary)]" />
-                        <label htmlFor='healthcare' className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Healthcare</label>
+                        <input id={`${prefix}-healthcare`} type="checkbox" value="Healthcare" className="min-w-5 min-h-5 accent-[var(--primary)]" onChange={handleDataChange} />
+                        <label htmlFor={`${prefix}-healthcare`} className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Healthcare</label>
                     </li>
 
                     <li className="flex items-center ">
-                        <input id="household-needs" type="checkbox" value="" className="min-w-5 min-h-5 accent-[var(--primary)]" />
-                        <label htmlFor='household-needs' className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Household Needs</label>
+                        <input id={`${prefix}-household-needs`} type="checkbox" value="Household Needs" className="min-w-5 min-h-5 accent-[var(--primary)]" onChange={handleDataChange} />
+                        <label htmlFor={`${prefix}-household-needs`} className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Household Needs</label>
                     </li>
                 </ul>
             </details>
@@ -83,13 +102,13 @@ const Filters = () => {
                 <ul className="flex flex-col gap-y-2 mt-4">
 
                     <li className="flex items-center ">
-                        <input id="green" type="checkbox" value="" className="relative appearance-none border-1 border-[var(--primary)] rounded-xl min-w-5 min-h-5 checked:before:absolute checked:before:top-[50%] checked:before:left-[50%] checked:before:transform checked:before:translate-x-[-50%] checked:before:translate-y-[-50%] checked:before:rounded-xl checked:before:w-4 checked:before:h-4 checked:before:bg-green-500 bg-gray-100 " />
-                        <label htmlFor='green' className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Green</label>
+                        <input id={`${prefix}-green`} type="checkbox" value="Green" className="relative appearance-none border-1 border-[var(--primary)] rounded-xl min-w-5 min-h-5 checked:before:absolute checked:before:top-[50%] checked:before:left-[50%] checked:before:transform checked:before:translate-x-[-50%] checked:before:translate-y-[-50%] checked:before:rounded-xl checked:before:w-4 checked:before:h-4 checked:before:bg-green-500 bg-gray-100 " onChange={handleDataChange} />
+                        <label htmlFor={`${prefix}-green`} className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Green</label>
                     </li>
 
                     <li className="flex items-center">
-                        <input id="yellow" type="checkbox" value="" className="relative appearance-none border-1 border-[var(--primary)] rounded-xl min-w-5 min-h-5 checked:before:absolute checked:before:top-[50%] checked:before:left-[50%] checked:before:transform checked:before:translate-x-[-50%] checked:before:translate-y-[-50%] checked:before:rounded-xl checked:before:w-4 checked:before:h-4 checked:before:bg-yellow-500 bg-gray-100 " />
-                        <label htmlFor='yellow' className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yellow</label>
+                        <input id={`${prefix}-yellow`} type="checkbox" value="Yellow" className="relative appearance-none border-1 border-[var(--primary)] rounded-xl min-w-5 min-h-5 checked:before:absolute checked:before:top-[50%] checked:before:left-[50%] checked:before:transform checked:before:translate-x-[-50%] checked:before:translate-y-[-50%] checked:before:rounded-xl checked:before:w-4 checked:before:h-4 checked:before:bg-yellow-500 bg-gray-100 " onChange={handleDataChange} />
+                        <label htmlFor={`${prefix}-yellow`} className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yellow</label>
                     </li>
 
                 </ul>
@@ -103,8 +122,8 @@ const Filters = () => {
                 <ul className="flex flex-col gap-y-2 mt-4">
 
                     <li className="flex items-center ">
-                        <input id="fresh" type="checkbox" value="" className="relative appearance-none border-1 border-[var(--primary)] rounded-xl min-w-5 min-h-5 checked:before:absolute checked:before:top-[50%] checked:before:left-[50%] checked:before:transform checked:before:translate-x-[-50%] checked:before:translate-y-[-50%] checked:before:rounded-xl checked:before:w-4 checked:before:h-4 checked:before:bg-green-500 bg-gray-100 " />
-                        <label htmlFor='fresh' className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">fresh</label>
+                        <input id={`${prefix}-fresh`} type="checkbox" value="Fresh" className="relative appearance-none border-1 border-[var(--primary)] rounded-xl min-w-5 min-h-5 checked:before:absolute checked:before:top-[50%] checked:before:left-[50%] checked:before:transform checked:before:translate-x-[-50%] checked:before:translate-y-[-50%] checked:before:rounded-xl checked:before:w-4 checked:before:h-4 checked:before:bg-green-500 bg-gray-100 " onChange={handleDataChange} />
+                        <label htmlFor={`${prefix}-fresh`} className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">fresh</label>
                     </li>
 
 
@@ -119,13 +138,13 @@ const Filters = () => {
                 <ul className="flex flex-col gap-y-2 mt-4">
 
                     <li className="flex items-center ">
-                        <input id="in-stock" type="checkbox" value="" className="relative appearance-none border-1 border-[var(--primary)] rounded-sm min-w-5 min-h-5 checked:before:absolute checked:before:top-[50%] checked:before:left-[50%] checked:before:transform checked:before:translate-x-[-50%] checked:before:translate-y-[-50%] checked:before:rounded-sm checked:before:w-5 checked:before:h-5 checked:before:bg-[var(--primary)] bg-gray-100 checked:after:absolute checked:after:top-[50%] checked:after:left-[50%] checked:after:transform checked:after:translate-x-[-50%] checked:after:translate-y-[-50%]  checked:after:w-5 checked:after:h-5 checked:after:pl-1 checked:after:content-[url('/checkbox-icon.svg')]" />
-                        <label htmlFor='sale' className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">In Stock</label>
+                        <input id={`${prefix}-in-stock`} type="checkbox" value="In Stock" className="min-w-5 min-h-5 accent-[var(--primary)]" onChange={handleDataChange} />
+                        <label htmlFor={`${prefix}-in-stock`} className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">In Stock</label>
                     </li>
 
                     <li className="flex items-center ">
-                        <input id="sale" type="checkbox" value="" className="relative appearance-none border-1 border-[var(--primary)] rounded-sm min-w-5 min-h-5 checked:before:absolute checked:before:top-[50%] checked:before:left-[50%] checked:before:transform checked:before:translate-x-[-50%] checked:before:translate-y-[-50%] checked:before:rounded-sm checked:before:w-5 checked:before:h-5 checked:before:bg-[var(--primary)] bg-gray-100 checked:after:absolute checked:after:top-[50%] checked:after:left-[50%] checked:after:transform checked:after:translate-x-[-50%] checked:after:translate-y-[-50%]  checked:after:w-5 checked:after:h-5 checked:after:pl-1 checked:after:content-[url('/checkbox-icon.svg')]" />
-                        <label htmlFor='sale' className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">On Sale</label>
+                        <input id={`${prefix}-sale`} type="checkbox" value="Sale" className="min-w-5 min-h-5 accent-[var(--primary)]" onChange={handleDataChange} />
+                        <label htmlFor={`${prefix}-sale`} className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">On Sale</label>
                     </li>
 
 

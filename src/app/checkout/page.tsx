@@ -10,7 +10,7 @@ const Checkout = () => {
         <>
             <CheckoutBreadcrumb/>
             <Coupon />
-            <div className='grid col-span-1 lg:grid-cols-[1fr_300px] gap-5 m-auto sm:w-[80vw]  px-[10px] pb-5'>
+            <div className='grid col-span-1 lg:grid-cols-[3fr_1.5fr] gap-5 m-auto sm:w-[80vw]  px-[10px] pb-5'>
                 <BillingDetails />
                 <YourOrder />
             </div>

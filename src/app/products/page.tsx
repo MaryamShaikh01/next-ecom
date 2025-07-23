@@ -11,7 +11,7 @@ import AllFilteredProducts from '@/components/ProductsPage/AllFilteredProducts';
 import VerticalFilter from '@/components/ProductsPage/VerticalFilter';
 import FilterSlideBtn from '@/components/ProductsPage/FilterSlideBtn';
 import SelectedFilters from '@/components/ProductsPage/SelectedFilters';
-import CheckboxProvider from '@/components/CheckboxContext'
+import CheckboxValueProvider from '@/components/CheckboxValueContext';
 
 const AllProducts = () => {
 
@@ -20,21 +20,22 @@ const AllProducts = () => {
 
     return (
         <>
-            <CheckboxProvider>
+            <CheckboxValueProvider >
 
-                <BreadCrumb />
+            <BreadCrumb />
 
-                <div className=' grid grid-cols-1  xl:grid-cols-[1fr_5fr] m-auto sm:w-[80vw] px-[10px]'>
-                    <VerticalFilter filter={filter} setIsFilter={setIsFilter} />
-                    <div>
-                        <SelectedFilters />
-                        <Banner />
-                        <HorizontalFilter isGrid={isGrid} setIsGrid={setIsGrid} />
-                        <AllFilteredProducts isGrid={isGrid} />
-                    </div>
-
+            <div className=' grid grid-cols-1  xl:grid-cols-[1fr_5fr] m-auto sm:w-[80vw] px-[10px]'>
+                <VerticalFilter filter={filter} setIsFilter={setIsFilter} />
+                <div>
+                    <SelectedFilters />
+                    <Banner />
+                    <HorizontalFilter isGrid={isGrid} setIsGrid={setIsGrid} />
+                    <AllFilteredProducts isGrid={isGrid} />
                 </div>
-            </CheckboxProvider>
+
+            </div>
+
+            </CheckboxValueProvider >
 
         </>
     )

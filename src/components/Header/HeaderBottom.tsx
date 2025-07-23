@@ -75,7 +75,10 @@ const HeaderBottom = () => {
                     <p className='flex flex-col leading-3 text-[11px] text-[#4f5159]'>Sign In<span className='text-[13px] text-[var(--text-primary)] font-medium'>Account</span></p>
                     </Link>
                     <Heart></Heart>
+                    <Link href="/cart">
                     <Basket></Basket>
+                    
+                    </Link>
                 </div>
 
             </div>

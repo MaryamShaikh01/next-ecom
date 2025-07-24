@@ -31,7 +31,7 @@ const HeaderBottom = () => {
         console.log(event.target.value)
         const inputValue = event.target.value
         setSearchQuery(inputValue)
-       
+
     }
 
     const enterClicked = (event: any) => {
@@ -40,7 +40,7 @@ const HeaderBottom = () => {
 
             if (inputValue.trim() !== "") {
                 router.push(`/products?search=${inputValue}`)
-                event.target.value = ""
+                // event.target.value = ""
             }
 
         }
@@ -48,7 +48,7 @@ const HeaderBottom = () => {
 
     return (
         <div className='border-b-1 border-b-[var(--border)]'>
-            <div className='px-[10px] m-auto sm:w-[80vw] flex gap-x-5 items-center flex-wrap md:flex-nowrap justify-between py-4'>
+            <div className='px-[10px] m-auto sm:w-[80vw] flex gap-x-5 items-center flex-wrap sm:flex-nowrap lg:justify-between py-4'>
                 <div className='flex items-center gap-x-5'>
 
                     <Link href="/" className='flex items-center gap-x-5 w-max'>
@@ -65,26 +65,31 @@ const HeaderBottom = () => {
                     </div>
                 </div>
 
-                <input type="search" name="search" id="search-cloth" placeholder="Search for products, categories or brands..."
-                    className="hidden  lg:block bg-[var(--secondary)] w-[55%] pl-10 pr-3 py-2.5 focus:outline-1 focus:outline-[var(--primary)] bg-[url('/search.svg')] bg-no-repeat bg-position-[10px] text-sm  rounded-[8px]" onChange={inputValueChange} value={searchQuery} onKeyDown={enterClicked} />
+                <input type="search" name="search"  placeholder="Search for products, categories or brands..."
+                    className="hidden  min-[800px]:block bg-[var(--secondary)] w-full pl-10 pr-3 py-2.5 focus:outline-1 focus:outline-[var(--primary)] bg-[url('/search.svg')] bg-no-repeat bg-position-[10px] text-sm  rounded-[8px]" onChange={inputValueChange} value={searchQuery} onKeyDown={enterClicked} />
 
-                <div className='flex items-center gap-x-5'>
+                <div className='flex items-center gap-x-5 max-[200px]:w-full'>
                     <Link href="/signin" className='flex  gap-x-2'>
 
-                    <UserRound />
-                    <p className='flex flex-col leading-3 text-[11px] text-[#4f5159]'>Sign In<span className='text-[13px] text-[var(--text-primary)] font-medium'>Account</span></p>
+                        <UserRound />
+                        <p className='flex flex-col leading-3 text-[11px] text-[#4f5159]'>Sign In<span className='text-[13px] text-[var(--text-primary)] font-medium'>Account</span></p>
                     </Link>
+
+                    <div className='max-[200px]:ml-auto flex items-center gap-x-5'>
+
                     <Heart></Heart>
                     <Link href="/cart">
-                    <Basket></Basket>
-                    
+                        <Basket></Basket>
+
                     </Link>
+                    </div>
+
                 </div>
 
             </div>
-            <div className='px-[10px] m-auto sm:w-[80vw] block lg:hidden pb-4'>
+            <div className='px-[10px] m-auto sm:w-[80vw] block min-[800px]:hidden pb-4'>
                 <input type="search" name="search" id="search-cloth" placeholder="Search for products, categories or brands..."
-                    className="bg-[var(--secondary)] text-sm w-full m-auto pl-10 pr-3  py-2.5 bg-[url('/search.svg')] bg-no-repeat bg-position-[10px]  rounded-[8px]" onChange={inputValueChange} value={searchQuery} onKeyDown={enterClicked}/>
+                    className="bg-[var(--secondary)] text-sm w-full m-auto pl-10 pr-3  py-2.5 bg-[url('/search.svg')] bg-no-repeat bg-position-[10px]  rounded-[8px]" onChange={inputValueChange} value={searchQuery} onKeyDown={enterClicked} />
             </div>
 
 

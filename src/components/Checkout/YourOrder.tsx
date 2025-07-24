@@ -8,10 +8,18 @@ const YourOrder = () => {
 
                 <p className='text-[var(--text-secondary)] text-sm font-medium flex justify-between py-2 border-b-1 border-[var(--border)]'>Product <span className='text-sm'>Subtotal</span></p>
 
-                <p className='text-sm font-medium flex justify-between gap-x-2 flex-wrap py-2 border-b-1 border-[var(--border)] '><span className=''>Marketside Fresh Organic
-                    Bananas, Bunch</span> <span className='font-semibold'>x 1</span> <span className='ml-auto'>$0.87</span></p>
+                <div className='grid grid-cols-[3fr_1fr] border-b-1 border-[var(--border)] py-1'>
 
-                    <p className='text-sm font-medium grid grid-cols-[2fr_1fr]'>Marketside Fresh Organic Bananas, Bunch</p>
+                    <p className='text-sm font-medium '>Marketside Fresh Organic Bananas, Bunch <span className='font-semibold'>x 1</span> </p>
+                    <span className='text-sm ml-auto col-start-2'>$0.87</span>
+                </div>
+
+
+                <div className='grid grid-cols-[3fr_1fr] border-b-1 border-[var(--border)] py-1'>
+
+                    <p className='text-sm font-medium '>Marketside Fresh Organic Bananas, Bunch <span className='font-semibold'>x 1</span> </p>
+                    <span className='text-sm ml-auto col-start-2'>$0.87</span>
+                </div>
 
                 <p className='text-[var(--text-secondary)] text-sm font-medium flex justify-between  py-2 border-b-1 border-[var(--border)] '>Subtotal <span className='text-black'>$0.87</span></p>
 
@@ -35,7 +43,7 @@ const YourOrder = () => {
 
                 <p className="flex items-center gap-x-2 py-2">
                     <input name="payMethod" id="bankTransfer" type="radio" value="" className="relative appearance-none border-1 border-gray-400 checked:border-black rounded-xl min-w-4 min-h-4 checked:before:absolute checked:before:top-[50%] checked:before:left-[50%] checked:before:transform checked:before:translate-x-[-50%] checked:before:translate-y-[-50%] checked:before:rounded-xl checked:before:w-2.5 checked:before:h-2.5 checked:before:bg-black" />
-                    <label htmlFor='bankTransfer'  className=" text-sm text-gray-900 font-semibold">Direct Bank Transfer</label>
+                    <label htmlFor='bankTransfer' className=" text-sm text-gray-900 font-semibold">Direct Bank Transfer</label>
                 </p>
 
                 <p className='text-sm text-[var(--text-secondary)] pb-2'>Make your payment directly into our bank account. Please

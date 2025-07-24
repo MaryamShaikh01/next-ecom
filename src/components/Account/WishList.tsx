@@ -6,8 +6,10 @@ import { Heart, X } from 'lucide-react'
 const WishList = () => {
     return (
         <>
+        <div className='border-1 border-[var(--border)] rounded-md text-md  px-3 py-3'>
+
             <div
-                className="relative grid grid-cols-1 lg:grid-cols-[0.5fr_3fr_1fr_1fr] first:gap-x-0 gap-x-5  items-center border-b-1 border-b-[#EDEEF2] py-5" id="">
+                className="relative grid grid-cols-1 lg:grid-cols-[0.5fr_3fr_1fr_1fr] first:gap-x-0 gap-x-5  items-center  border-b-1 border-b-[#EDEEF2] py-5" id="">
                 <button type="button" className=" absolute lg:static top-[20px] md:flex md:justify-center md:items-center right-0  cursor-pointer">
 
                     <X />
@@ -36,7 +38,7 @@ const WishList = () => {
 
 
             <div
-                className="relative grid grid-cols-1 lg:grid-cols-[0.5fr_3fr_1fr_1fr] first:gap-x-0  items-center border-b-1 border-b-[#EDEEF2] py-5" id="">
+                className="relative grid grid-cols-1 lg:grid-cols-[0.5fr_3fr_1fr_1fr] first:gap-x-0  items-center  py-5" id="">
                 <button type="button" className=" absolute lg:static top-[20px] md:flex md:justify-center md:items-center right-0  cursor-pointer">
 
                     <X />
@@ -61,6 +63,7 @@ const WishList = () => {
                     className=" whitespace-nowrap cursor-pointer w-fit px-4 md:px-7 py-1.5 md:py-3 font-semibold rounded-lg bg-[var(--primary)] hover:bg-violet-900 text-white">
                     Add to Cart</button>
             </div>
+        </div>
 
             <div className="flex flex-col justify-center items-center text-center">
 

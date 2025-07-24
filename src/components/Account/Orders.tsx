@@ -8,7 +8,7 @@ const Orders = () => {
     return (
         <>
 
-            <div className="grid ">
+            <div className="grid border-1 border-[var(--border)] rounded-md text-md  px-3 py-3">
 
 
                 <p className="w-fit text-2xl text-[var(--dark-black)] font-semibold">My Order</p>
@@ -235,7 +235,7 @@ const Orders = () => {
                                 </div>
 
                                 <div
-                                    className="relative flex flex-wrap items-center justify-between gap-x-5 gap-y-2   border-b-1 border-b-[#EDEEF2] py-5">
+                                    className="relative flex flex-wrap items-center justify-between gap-x-5 gap-y-2    py-5">
                                     <div
                                         className=" grid grid-cols-1  min-[360px]:grid-cols-[auto_1fr_auto] items-start pr-5  lg:items-center justify-center gap-y-2 gap-x-5 ">
 

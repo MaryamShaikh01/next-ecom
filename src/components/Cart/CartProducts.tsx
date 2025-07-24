@@ -12,13 +12,13 @@ const CartProducts = () => {
 
                 <div className="bg-[var(--primary)] lg:bg-[var(--primary)] shrink-0  sm:flex sticky top-0 ">
                     <div
-                        className=" px-[10px] lg:py-[20px] place-items-start lg:place-items-center m-auto w-fit lg:w-[85vw] 2xl:sm:w-[80vw] h-full hidden md:grid grid-cols-1 grid-rows-[4fr_1fr_1fr_1fr_1fr_1fr] lg:grid lg:grid-rows-1 lg:grid-cols-[4fr_1fr_1fr_1fr_1fr_1fr] gap-3">
-                        <p className="uppercase text-white font-semibold text-lg place-self-center md:justify-self-start">Product Details</p>
-                        <p className="uppercase text-white font-semibold text-lg">Price</p>
-                        <p className="uppercase text-white font-semibold text-lg">Quantity</p>
-                        <p className="uppercase text-white font-semibold text-lg">Shipping</p>
-                        <p className="uppercase text-white font-semibold text-lg">Subtotal</p>
-                        <p className="uppercase text-white font-semibold text-lg">Action</p>
+                        className=" px-2.5 lg:py-3 place-items-start lg:place-items-center m-auto w-fit lg:w-[85vw] 2xl:sm:w-[80vw] h-full hidden md:grid grid-cols-1 grid-rows-[4fr_1fr_1fr_1fr_1fr_1fr] lg:grid lg:grid-rows-1 lg:grid-cols-[4fr_1fr_1fr_1fr_1fr_1fr] gap-3">
+                        <p className="uppercase text-white font-semibold text-md place-self-center md:justify-self-start">Product Details</p>
+                        <p className="uppercase text-white font-semibold text-md">Price</p>
+                        <p className="uppercase text-white font-semibold text-md">Quantity</p>
+                        <p className="uppercase text-white font-semibold text-md">Shipping</p>
+                        <p className="uppercase text-white font-semibold text-md">Subtotal</p>
+                        <p className="uppercase text-white font-semibold text-md">Action</p>
                     </div>
 
                     <div className="px-[10px] lg:py-[20px] lg:place-items-center m-auto w-fit lg:w-[85vw] 2xl:sm:w-[80vw]   h-full grid md:hidden grid-cols-1 grid-rows-[4fr_1fr_1fr_1fr_1fr_1fr] gap-y-3 ">
@@ -46,10 +46,10 @@ const CartProducts = () => {
                                 <span className="product-size text-[var(--light-black)] text-sm">Size : XS</span>
                             </div>
                             <p className="product-price text-[var(--dark-black)] text-lg font-semibold">$09.00</p>
-                            <button className="flex items-center gap-1 rounded-xl bg-[var(--light-bg-colour)] text-xs">
+                            <button className="flex items-center gap-1 rounded-xl bg-[var(--light-bg-colour)] text-lg font-semibold">
                                 <span
-                                    className="rounded-tl-xl rounded-bl-xl bg-[var(--light-bg-colour)] pr-2 pl-5 py-2.5 cursor-pointer text-xs hover:bg-purple-300">-</span>
-                                <span >8</span>
+                                    className="rounded-tl-xl rounded-bl-xl bg-[var(--light-bg-colour)] pr-2 pl-5 py-2.5 cursor-pointer ext-lg font-semibold hover:bg-purple-300">-</span>
+                                <span className='ext-lg font-semibold'>8</span>
                                 <span
                                     className=" justify-self-start rounded-tr-xl rounded-br-xl bg-[var(--light-bg-colour)] pl-2 pr-5 py-2.5 cursor-pointer text-xs hover:bg-purple-300">+</span>
 
@@ -69,12 +69,12 @@ const CartProducts = () => {
                                 <span className="product-size text-[var(--light-black)] text-sm">Size : XS</span>
                             </div>
                             <p className="product-price text-[var(--dark-black)] text-lg font-semibold">$09.00</p>
-                            <button className="flex items-center gap-1 rounded-xl bg-[var(--light-bg-colour)] text-xs">
+                            <button className="flex items-center gap-1 rounded-xl bg-[var(--light-bg-colour)] ext-lg font-semibold">
                                 <span
-                                    className="rounded-tl-xl rounded-bl-xl bg-[var(--light-bg-colour)] pr-2 pl-5 py-2.5 cursor-pointer text-xs hover:bg-purple-300">-</span>
+                                    className="rounded-tl-xl rounded-bl-xl bg-[var(--light-bg-colour)] pr-2 pl-5 py-2.5 cursor-pointer ext-lg font-semibold hover:bg-purple-300">-</span>
                                 <span >8</span>
                                 <span
-                                    className=" justify-self-start rounded-tr-xl rounded-br-xl bg-[var(--light-bg-colour)] pl-2 pr-5 py-2.5 cursor-pointer text-xs hover:bg-purple-300">+</span>
+                                    className=" justify-self-start rounded-tr-xl rounded-br-xl bg-[var(--light-bg-colour)] pl-2 pr-5 py-2.5 cursor-pointer ext-lg font-semibold hover:bg-purple-300">+</span>
 
                             </button>
                             <p className="text-[#BEBCBD] text-lg font-semibold">FREE</p>
@@ -89,7 +89,7 @@ const CartProducts = () => {
 
             </div>
 
-            <div className='bg-[#F3F3F3] '>
+            <div className='border-t-1 border-[var(--border)] '>
 
                 <div className=" grid px-[10px] m-auto sm:w-[80vw]">
 
@@ -113,9 +113,9 @@ const CartProducts = () => {
                         </tr>
 
                     </table>
-                    <hr className="text-gray-400" />
+                    <hr className="text-[var(--border)]" />
                     <Link href="/checkout" type="button"
-                        className="justify-self-center w-fit mt-2 px-8 py-2 font-semibold rounded-lg bg-[var(--primary)] text-white cursor-pointer">
+                        className="justify-self-center w-fit my-5 px-8 py-2 font-semibold rounded-lg bg-[var(--primary)] text-white cursor-pointer">
                         Proceed To Checkout</Link>
                 </div>
             </div>

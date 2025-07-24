@@ -18,7 +18,7 @@ const LoggedUserTabData = () => {
             <div className='m-auto px-2.5 sm:w-[80vw] grid grid-cols-[1fr_4fr] mb-10 gap-y-3 md:gap-y-5 gap-x-5'>
 
                 <div className='grid grid-cols-[auto_1fr] gap-x-3 items-center col-span-full'>
-                    <p className='row-span-2 w-10 h-10 rounded-full bg-[var(--secondary)] flex items-center justify-center'>
+                    <p className='row-span-2 w-13 h-13 rounded-full bg-[var(--secondary)] flex items-center justify-center'>
                         <UserRound className='' strokeWidth={2.5} />
                     </p>
 
@@ -38,7 +38,7 @@ const LoggedUserTabData = () => {
                     </div>
                 </div>
 
-                <div className='col-span-full md:col-span-1 px-3 py-3 border-1 border-[var(--border)] rounded-md text-md '>
+                <div className='col-span-full md:col-span-1  '>
                     {activeTab === "tab1" && <div>
 
                         <Orders />

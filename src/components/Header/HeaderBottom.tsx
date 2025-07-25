@@ -64,10 +64,11 @@ const HeaderBottom = () => {
                         <p className='flex flex-col leading-3 text-[11px] whitespace-nowrap text-[#4f5159]'>Deliver to <span className='text-[13px] text-[var(--text-primary)] font-medium'>all</span></p>
                     </div>
                 </div>
-
-                <input type="search" name="search"  placeholder="Search for products, categories or brands..."
-                    className="hidden  min-[800px]:block bg-[var(--secondary)] w-full pl-10 pr-3 py-2.5 focus:outline-1 focus:outline-[var(--primary)] bg-[url('/search.svg')] bg-no-repeat bg-position-[10px] text-sm  rounded-[8px]" onChange={inputValueChange} value={searchQuery} onKeyDown={enterClicked} />
-
+                <div className='w-full relative hidden  min-[800px]:block'>
+                    <img src="/search.svg" alt="search icon" width={10} height={10} className='w-6 h-6 top-2 left-2 absolute' />
+                    <input type="search" name="search" placeholder="Search for products, categories or brands..."
+                        className=" bg-[var(--secondary)] w-full pl-10 pr-3 py-2.5 focus:outline-1 focus:outline-[var(--primary)]  text-sm  rounded-[8px]" onChange={inputValueChange} value={searchQuery} onKeyDown={enterClicked} />
+                </div>
                 <div className='flex items-center gap-x-5 max-[200px]:w-full'>
                     <Link href="/signin" className='flex  gap-x-2'>
 
@@ -77,19 +78,20 @@ const HeaderBottom = () => {
 
                     <div className='max-[200px]:ml-auto flex items-center gap-x-5'>
 
-                    <Heart></Heart>
-                    <Link href="/cart">
-                        <Basket></Basket>
+                        <Heart></Heart>
+                        <Link href="/cart">
+                            <Basket></Basket>
 
-                    </Link>
+                        </Link>
                     </div>
 
                 </div>
 
             </div>
-            <div className='px-[10px] m-auto sm:w-[80vw] block min-[800px]:hidden pb-4'>
-                <input type="search" name="search" id="search-cloth" placeholder="Search for products, categories or brands..."
-                    className="bg-[var(--secondary)] text-sm w-full m-auto pl-10 pr-3  py-2.5 bg-[url('/search.svg')] bg-no-repeat bg-position-[10px]  rounded-[8px]" onChange={inputValueChange} value={searchQuery} onKeyDown={enterClicked} />
+            <div className='w-full relative px-[10px] m-auto sm:w-[80vw] block min-[800px]:hidden pb-4'>
+                    <img src="/search.svg" alt="search icon" width={10} height={10} className='w-6 h-6 top-2 left-5 absolute' />
+                    <input type="search" name="search" placeholder="Search for products, categories or brands..."
+                        className=" bg-[var(--secondary)] w-full pl-10 pr-3 py-2.5 focus:outline-1 focus:outline-[var(--primary)]  text-sm  rounded-[8px]" onChange={inputValueChange} value={searchQuery} onKeyDown={enterClicked} />
             </div>
 
 
